@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ikon的小屋-用英语读图片的内容</title>
+<link rel= "shortcut icon" href ="logo.png" type="image/x-icon" />
+<style>
+.a {
+text-decoration:none;
+color:black;
+font-size:14vw;
+position:relative;
+top:0px;
+border-style:none;
+background-color:transparent;
+}
+.BA {
+width:100%;
+}
+.BD {
+color:white;
+background:white;
+width:20%;
+height:7%;
+background:#FF88B9;
+border-radius:5vw;
+font-size:3.5vw;
+}
+.BB {
+color:#C09F96;
+font-size:7vw;
+}
+.BC {
+color:#C09F96;
+}
+.BBA {
+
+left:-3px;
+width:100%;
+height:25%;
+z-index: 3;
+border-style:none;
+background-color:transparent;
+
+}
+.YC {
+opacity:0.2;
+}
+.yue {
+position:fixed;
+	bottom:10vh;
+	left:1vw;
+	background-color:transparent;
+	width:10vw;
+	height:10vw;
+	border-style:none;
+	z-index: 1000;
+}
+.yuea {
+position:fixed;
+	bottom:15vw;
+	left:1vw;
+	width:10vw;
+	height:10vw;
+    z-index:1000;
+}
+.no {
+position:fixed;
+	top:5vh;
+	left:90vw;
+width:10vw;
+height:10vw;
+outline: none;
+z-index: 999;
+opacity:0;
+background-color:#FF88B9;
+color:white;
+border-style:none;
+}
+.blackbut {
+position:fixed;
+	top:0px;
+	right:0px;
+width:100vw;
+height:100vh;
+font-size:10vw;
+border-style:none;background-color:transparent;
+	z-index:20002;
+}
+.black {
+width:100%;
+height:100%;
+background:#494949;
+position:fixed;
+	top:0px;
+	left:0px;
+	z-index:20000;
+	display:none;
+}
+.blackA {
+width:100%;
+position:fixed;
+	top:30vh;
+	left:0px;
+	z-index:20000;
+	animation:A 0.5s infinite;
+	animation-iteration-count:1;
+}
+@keyframes A
+    {
+    from {width:90%}
+    to {width:100%}
+    }
+    .black a {
+    z-index:230000;
+    position:fixed;
+	top:90vh;
+	left:0px;
+	color:#FF88B9;
+    } 
+    .blackimg {
+    width:10%;
+    }
+</style>
+
+<body id="body">
+<button onclick="fh()"class="a">&lt;</button>
+
+<button class="BBA" onclick="blackA()">
+<img src="3.png" alt="图片" class="BA" loading="lazy"></img>
+</button>
+<p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月17日</small></p>
+<p class="BE">标签:</p>
+<p class="BD">·生活</p>
+<p class="BB"><b>用英语读图片的内容</b></p>
+<p class="BC">是不是第一反应是日语呢23333
+看到前辈的一瞬间就想到“仙贝～”，是不是呢，( ^３^ )╱“大丈古”，那你看到喜欢的第一反应是“带司ki”还是“阿姨洗铁路”呢，话说这样子的话，那这确实是樱语啊ヾ(✿ﾟ▽ﾟ)ノ
+<br>灵感来源: <a href="https://m.bilibili.com/video/BV19h4y1Q7XQ?buvid=XUE05CBED92023D1C0DFCD3130F5611C06EEC&is_story_h5=false&mid=6IlzIxashpADnoHrXa79OQ%3D%3D&p=1&plat_id=116&share_from=ugc&share_medium=android_b&share_plat=android&share_session_id=34785b2b-331a-4b1b-b959-c3c6833a08f0&share_source=GENERIC&share_tag=s_i&timestamp=1692268293&unique_k=VZKFdtO&up_id=338214524&share_times=1">哔哩哔哩</a></p>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <div id="gitalk-container"></div>
+  <script>
+  var gitalk = new Gitalk({
+  clientID: '8687ab4fa45ff66e4147',
+  clientSecret: '044fedc2354a86d7f7cbe5484ac3dc583ac976d2',
+  repo: 'keep',
+  owner: 'mykonshshhdhdhdh',
+  admin: ['mykonshshhdhdhdh'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+</script>
+<button class="yue" id="yue" onclick="yue()">
+<img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
+</button>
+<button class="no" id="no" onclick="non()">&#8743;</button>
+<div class="black" id="black">
+<a href="3.png" download="LHY/3.png"><img src="xz.svg" alt="图片" class="blackimg"></a>
+<img decoding="async" src="3.png" alt="图片" class="blackA" loading="lazy" id="blackA">
+<button class="blackbut" onclick="none()"></button>
+</div> 
+<script>
+var y=1;
+function yue(){
+ y=y+1;
+ if(y==3){
+ y=1;
+ }
+ if(y==2){
+ var body = document.getElementById('body');body.style.transition = "1s"; body.style.background = "#565656";
+
+ var yuea=document.getElementById("yuea");
+
+  yuea.setAttribute("src","yan.svg");
+ }
+ if(y==1){
+var body = document.getElementById('body');body.style.transition = "1s"; body.style.background = "white";
+
+  var yuea=document.getElementById("yuea");
+
+  yuea.setAttribute("src","yue.svg");
+ }
+}
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {console.log(121);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
+        
+                
+        
+    } 
+    
+    else {
+      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
+    }
+}
+function non() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+function none(){
+var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
+document.body.style.overflow = 'auto';
+}
+function blackA(){
+document.body.style.overflow = 'hidden';
+var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "inline";
+}
+function fh(){
+window.history.back();
+}
+</script>
+
+
+</body>

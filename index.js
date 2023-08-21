@@ -20,7 +20,9 @@ function yue(){
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.background = "#565656";
  var B = document.getElementById('divC');B.style.transition = "1s"; B.style.background = "#565656";
  var CF = document.getElementById('CF');CF.style.transition = "1s"; CF.style.background = "#565656";
-
+var abq = document.getElementById('abq');abq.style.transition = "1s"; abq.style.background = "#565656";
+ var bbq = document.getElementById('bbq');bbq.style.transition = "1s"; bbq.style.background = "#565656";
+ var cbq = document.getElementById('cbq');cbq.style.transition = "1s"; cbq.style.background = "#565656";
   var D = document.getElementById('divE');D.style.transition = "1s"; D.style.background = "#565656";
  var DD = document.getElementById('DD');DD.style.transition = "1s"; DD.style.background = "#565656";
   var EF = document.getElementById('EF');EF.style.transition = "1s"; EF.style.background = "#565656";
@@ -36,7 +38,9 @@ function yue(){
  var A = document.getElementById('divB');A.style.transition = "1s"; A.style.background = "white";
 var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.background = "white";
   var B = document.getElementById('divC');B.style.transition = "1s"; B.style.background = "white";
-  
+  var abq = document.getElementById('abq');abq.style.transition = "1s"; abq.style.background = "white";
+ var bbq = document.getElementById('bbq');bbq.style.transition = "1s"; bbq.style.background = "white";
+ var cbq = document.getElementById('cbq');cbq.style.transition = "1s"; cbq.style.background = "white";
     var D = document.getElementById('divE');D.style.transition = "1s"; D.style.background = "white";
  var DD = document.getElementById('DD');DD.style.transition = "1s"; DD.style.background = "white";
   var CF = document.getElementById('CF');CF.style.transition = "1s"; CF.style.background = "white";

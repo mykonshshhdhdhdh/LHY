@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ikon的小屋-我的网站</title>
+
+<style>
+body {
+width:100%;
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.yue {
+position:fixed;
+	bottom:10vh;
+	left:1vw;
+	background-color:transparent;
+	width:10vw;
+	height:10vw;
+	border-style:none;
+	z-index: 1000;
+}
+.yuea {
+position:fixed;
+	bottom:15vw;
+	left:1vw;
+	width:10vw;
+	height:10vw;
+    z-index:1000;
+}
+
+#div {
+width:3px;
+height:60vh;
+background-color:#FF88B9;
+opacity:1;
+filter: drop-shadow(0px 2px 10px  #aab5bc);
+z-index: 2;
+position:relative;
+	top:-20vh;
+}
+#a {
+z-index: 1;
+position:relative;
+	top:10vh;
+	right:-10vh;
+	color:#FF88B9;
+}
+#b {
+z-index: 1;
+position:relative;
+	top:20vh;
+	left:-15vh;
+	color:#FF88B9;
+	direction:rtl;
+}
+#c {
+z-index: 1;
+position:relative;
+	top:30vh;
+	right:-10vh;
+	color:#FF88B9;
+}
+a {
+color:#FF88B9;
+text-decoration:none;
+}
+</style>
+
+<body id="body">
+
+<ul>
+<li id="a">
+<a href="https://mykonshshhdhdhdh.github.io/my/index.html" >个人网站</a>
+</li>
+<li id="b">
+<a href="https://mykonshshhdhdhdh.github.io/mine/index.html" >个人网站2.0</a>
+</li>
+<li id="c">
+<a href="https://mykonshshhdhdhdh.github.io/-/" >幸运星粉丝网站</a>
+</li>
+</ul>
+<div id="div"></div>
+
+<button class="yue" id="yue" onclick="yue()">
+<img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
+</button>
+<script>
+function fh(){
+window.history.back();
+
+}
+var y=1;
+function yue(){
+ y=y+1;
+ if(y==3){
+ y=1;
+ }
+ if(y==2){
+ var body = document.getElementById('body');body.style.transition = "1s"; body.style.background = "#565656";
+
+ var yuea=document.getElementById("yuea");
+
+  yuea.setAttribute("src","yan.svg");
+ }
+ if(y==1){
+var body = document.getElementById('body');body.style.transition = "1s"; body.style.background = "white";
+
+  var yuea=document.getElementById("yuea");
+
+  yuea.setAttribute("src","yue.svg");
+ }
+}
+</script>
+</body>
+</html>

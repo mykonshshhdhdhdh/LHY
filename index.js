@@ -114,15 +114,7 @@ var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.st
  }
  }
  function yx(){
- var x;
-	var r=confirm("我的邮箱是\n2528197707@qq.com\n现在要前往QQ邮箱，请您确认");
-	if (r==true){
-		x="你按下了\"确定\"按钮!";
-		window.open("https://wap.mail.qq.com");
-	}
-	else{
-		x="你按下了\"取消\"按钮!";
-	}
+ window.open('n.html');
 }
 
     

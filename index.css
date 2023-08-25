@@ -736,9 +736,9 @@ color:#876C60;
 .no {
 position:fixed;
 	top:5vh;
-	left:90vw;
-width:10vw;
-height:10vw;
+	left:95vw;
+width:5vw;
+height:5vw;
 outline: none;
 z-index: 999;
 opacity:0;

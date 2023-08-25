@@ -1,0 +1,93 @@
+
+.BA {
+width:100%;
+}
+.BD {
+color:white;
+background:white;
+width:12%;
+height:4%;
+background:#FF88B9;
+border-radius:5vw;
+font-size:2vw;
+}
+.BB {
+color:#C09F96;
+font-size:4vw;
+}
+.BC {
+color:#C09F96;
+width:80%;
+}
+.BBA {
+
+left:-3px;
+width:80%;
+height:25%;
+z-index: 3;
+border-style:none;
+background-color:transparent;
+
+}
+.YC {
+opacity:0.2;
+width:80%;
+}
+
+.no {
+position:fixed;
+	top:5vh;
+	left:95vw;
+width:5vw;
+height:5vw;
+outline: none;
+z-index: 999;
+opacity:0;
+background-color:#FF88B9;
+color:white;
+border-style:none;
+}
+.blackbut {
+position:fixed;
+	top:0px;
+	right:0px;
+width:100vw;
+height:100vh;
+font-size:10vw;
+border-style:none;background-color:transparent;
+	z-index:20002;
+}
+.black {
+width:100%;
+height:100%;
+background:#494949;
+position:fixed;
+	top:0px;
+	left:0px;
+	z-index:20000;
+	display:none;
+}
+.blackA {
+height:100vh;
+position:fixed;
+	top:0vh;
+	left:0%;
+	z-index:20000;
+	animation:A 0.5s infinite;
+	animation-iteration-count:1;
+}
+@keyframes A
+    {
+    from {height:97%}
+    to {height:100%}
+    }
+    .black a {
+    z-index:230000;
+    position:fixed;
+	top:10vh;
+	left:0px;
+	color:#FF88B9;
+    } 
+    .blackimg {
+    width:5%;
+    }

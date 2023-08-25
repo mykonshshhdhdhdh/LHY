@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ikon的小屋-推荐一部番剧</title>
+
+<link href="1.css" rel="stylesheet" type="text/css" media="screen and (max-width: 640px)">
+<link href="2.css" rel="stylesheet" type="text/css" media="screen and (min-width: 640px)">
+
+<link rel= "shortcut icon" href ="logo.png" type="image/x-icon" />
+<base target="_parent">
+<style>
+
+</style>
+
+<body id="body">
+
+<button class="BBA" onclick="blackA()">
+<img src="1.png" alt="图片" class="BA" loading="lazy"></img>
+</button>
+<p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月15日</small></p>
+<p class="BE">标签:</p>
+<p class="BD">·动漫</p>
+<p class="BB"><b>推荐一部番剧</b></p>
+<p class="BC">《一周的朋友》如其名，就是每周都会重置与朋友的记忆的女主藤宫香织与男主长谷交朋友的故事。长谷在被香织忘了无数次，好不容易培养的感情被遗忘的情况下，仍坚持着，数次说出“请再次与我交朋友吧”香织也在长谷的帮助下渐渐能记起感情。这是一部纯爱番，不过最后两人没有交往，仍是朋友相称，不过感情早以比朋友更高一层了。长谷有一全程助攻的好基友桐生，香织也交到了一位有健忘症的女生沙希。沙希是桐生小学的同班同学，这两人之间很甜的。</p>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <div id="gitalk-container"></div>
+  <script>
+  var gitalk = new Gitalk({
+  clientID: '0e1a89a4195bcc431fb7',
+  clientSecret: '0d438d8c1ee0e567971765238d98a3d7038bfe3d',
+  repo: 'LHYPL',
+  owner: 'mykonshshhdhdhdh',
+  admin: ['mykonshshhdhdhdh'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+<button class="no" id="no" onclick="non()">&#8743;</button>
+<div class="black" id="black">
+<a href="1.png" download="LHY/1.png"><img src="xz.svg" alt="图片" class="blackimg"></a>
+<img decoding="async" src="1.png" alt="一周的朋友" class="blackA" loading="lazy" id="blackA">
+<button class="blackbut" onclick="none()"></button>
+</div> 
+<script>
+
+window.onscroll = function() {scrollFunction()};
+ 
+function scrollFunction() {console.log(121);
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
+        
+                
+        
+    } 
+    
+    else {
+      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
+    }
+}
+function non() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+function none(){
+var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
+document.body.style.overflow = 'auto';
+}
+function blackA(){
+document.body.style.overflow = 'hidden';
+var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "inline";
+}
+function fh(){
+window.history.back();
+}
+</script>
+
+
+</body>

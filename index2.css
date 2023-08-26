@@ -22,13 +22,15 @@ background:rgba(108,108,108,0.5);
 .dzj {
 color:white;
 width:16px;
-height:25px;
+height:1.1em;
+font-size:1.5em;
 Overflow:hidden;
 animation:dzj 10s infinite;
 border-right-style:solid;
 border-right-width:2px;
 border-right-color:white;
-user-select:none;
+position:relative;
+top: -1em;
 
 }
 @keyframes dzj

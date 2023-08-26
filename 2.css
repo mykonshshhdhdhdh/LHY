@@ -85,9 +85,9 @@ position:fixed;
     z-index:230000;
     position:fixed;
 	top:10vh;
-	left:0px;
+	left:90vw;
 	color:#FF88B9;
     } 
     .blackimg {
-    width:5%;
+    width:5vw;
     }

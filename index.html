@@ -16,6 +16,20 @@
 
 </style>
 <script>
+	function is_weixn(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}  
+
+if( is_weixn() ) 
+{
+  window.open("403.html");
+}
+	
 			function load()
 			{
 				alert("您好，如果你想评论，请先在侧边栏登录，切勿在文章页面登录!");

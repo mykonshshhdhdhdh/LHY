@@ -10,6 +10,21 @@ background-size: cover;
 scroll-behavior: smooth;
 
 }
+#ts {
+width:100vw;
+height:8vh;
+background:#ffdd71;
+position:fixed;
+	top:0px;
+	left:0px;
+z-index: 50000;
+font-size:0.95em;
+Overflow:auto;
+}
+#ts b {
+position:absolute;
+	right:3%;
+}
 .dzja {
 width:155px;
 height:45px;

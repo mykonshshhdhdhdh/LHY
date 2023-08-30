@@ -172,7 +172,7 @@ var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.st
  }
  function yx(){
 window.open('n.html');
-	 audio=document.getElementById("audio");
+	var audio=document.getElementById("audio");
 document.cookie="a=audio.duration;";
 }
 

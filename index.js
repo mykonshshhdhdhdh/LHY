@@ -55,7 +55,7 @@ function yue(){
  y=1;
  }
  if(y==2){
-document.cookie="y=2";
+document.cookie="y=＇2＇";
  var bq = document.getElementById('bq');bq.style.transition = "1s"; bq.style.background = "#565656";
  
  var abq = document.getElementById('abq');abq.style.transition = "1s"; abq.style.background = "#565656";

@@ -83,7 +83,7 @@ function yue(){
  var yuea=document.getElementById("yuea");
 
   yuea.setAttribute("src","yan.svg");
-  if (screen.width > 700) { 
+  if (screen.width > 640) { 
     document.body.style.transition = "1s";document.body.style.backgroundImage = "url(bj2b.jpg)";
     var dq = document.getElementById('dq');dq.style.transition = "1s"; dq.style.background = "#565656";
    } 
@@ -114,7 +114,7 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
   var yuea=document.getElementById("yuea");
 
   yuea.setAttribute("src","yue.svg");
-    if (screen.width > 700) { 
+    if (screen.width > 640) { 
     document.body.style.transition = "1s";document.body.style.backgroundImage = "url(bj2.jpg)";
     var dq = document.getElementById('dq');dq.style.transition = "1s"; dq.style.background = "white";
    } 

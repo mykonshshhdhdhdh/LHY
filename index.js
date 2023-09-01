@@ -1,6 +1,6 @@
 document.documentElement.scrollTop = 0;
 var input, filter, table, tr, td, ssi, txtValue;
- 
+document.cookie = "username=; 
  
  
 

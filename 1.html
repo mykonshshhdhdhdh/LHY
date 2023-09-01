@@ -79,9 +79,10 @@ function non() {
 function none(){
 var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
 document.body.style.overflow = 'auto';
+if (screen.width < 640) {
 var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
 var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
- ha=1;
+ ha=1;}
 }
 function blackA(){
 document.body.style.overflow = 'hidden';
@@ -93,6 +94,7 @@ window.history.back();
 }
 var ha=1;
 function h(event){
+if (screen.width < 640) {
 ha=ha+1;
 if(ha==3){
 ha=1;
@@ -114,10 +116,13 @@ var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s";
 if(x > ya && x < yb ){
 var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-50vw";
 }
+
 }
 if(ha==1){
 var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
 var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
+
+}
 }
 }
 

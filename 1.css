@@ -70,7 +70,7 @@ width:100%;
 position:fixed;
 	top:30vh;
 	left:0px;
-	z-index:20000;
+	z-index:21000;
 	animation:A 0.5s infinite;
 	animation-iteration-count:1;
 }

@@ -1374,7 +1374,9 @@ width:100%;
   text-align: left; /* 文本靠左对齐 */
   padding: 12px; /* 设置内边距 */
 }
- 
+#ssb p {
+display:none;
+	} 
 #ssb tr {
 
 display:none;

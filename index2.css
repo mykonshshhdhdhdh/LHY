@@ -1418,7 +1418,9 @@ width:100%;
   padding: 12px; /* 设置内边距 */
   
 }
- 
+ #ssb p {
+display:none;
+	}
 #ssb tr {
 display:none;
 width:100%;

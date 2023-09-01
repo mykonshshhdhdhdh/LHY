@@ -49,7 +49,7 @@ gitalk.render('gitalk-container')
 <button class="no" id="no" onclick="non()">&#8743;</button>
 <div class="black" id="black">
 <a href="2.jpg" download="LHY/2.jpg"><img src="xz.svg" alt="图片" class="blackimg"></a>
-<img decoding="async" src="2.jpg" alt="图片" class="blackA" loading="lazy" id="blackA">
+<img decoding="async" src="2.jpg" alt="图片" class="blackA" loading="lazy" id="blackA" ondblclick="h()">
 <button class="blackbut" onclick="none()"></button>
 </div> 
 <script>
@@ -82,6 +82,36 @@ var black = document.getElementById('black');black.style.transition = "0s"; blac
 }
 function fh(){
 window.history.back();
+}
+
+var ha=1;
+function h(event){
+ha=ha+1;
+if(ha==3){
+ha=1;
+}
+if(ha==2){
+
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "150vw";
+var e = event || window.event;
+var x = e.screenX;
+var y = document.body.scrollWidth/3;  
+var ya=y+y;
+var yb=ya+y;
+if(x < y && x>0){
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
+}
+if(x > y && x < ya ){
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-20vw";
+}
+if(x > ya && x < yb ){
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-50vw";
+}
+}
+if(ha==1){
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
+var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
+}
 }
 </script>
 

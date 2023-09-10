@@ -61,10 +61,44 @@ a {
 color:#FF88B9;
 text-decoration:none;
 }
+#fh {
+text-decoration:none;
+font-size:14vw;
+color:#FF88B9;
+position:fixed;
+top:0px;
+left:0px;
+border-style:none;
+background-color:transparent;
+z-index: 202;
+}
+@media(min-width: 640px) {
+#fh {
+text-decoration:none;
+font-size:7vw;
+color:#FF88B9;
+position:fixed;
+top:0px;
+border-style:none;
+background-color:transparent;
+z-index: 202;
+}
+}
 </style>
 
 <body id="body">
+<script>
 
+var y = document.cookie; 
+if(y=="y=2")
+{
+ document.body.style.background= "#565656";
+}
+if(y=="y=1")
+{
+document.body.style.background= "white";
+}
+</script>
 <ul>
 <li id="a">
 <a href="https://mykonshshhdhdhdh.github.io/my/index.html" >个人网站</a>
@@ -80,6 +114,17 @@ text-decoration:none;
 </li>
 </ul>
 <div id="div"></div>
+<button onclick="mybq()" id="fh">&lt;</button>
+<script>
+function mybq(){
+if(history.length==1){
+window.open("index.html")
+}else{
+window.history.go(-1)
+}
 
+}
+
+</script>
 </body>
 </html>

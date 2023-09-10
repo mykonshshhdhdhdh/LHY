@@ -17,7 +17,18 @@
 </style>
 
 <body id="body">
+<script>
 
+var y = document.cookie; 
+if(y=="y=2")
+{
+ document.body.style.background= "#565656";
+}
+if(y=="y=1")
+{
+document.body.style.background= "white";
+}
+</script>
 <button class="BBA" onclick="blackA()">
 <img src="1.png" alt="图片" class="BA" loading="lazy"></img>
 </button>
@@ -49,7 +60,7 @@
 
 gitalk.render('gitalk-container')
 </script>
-
+<button onclick="mybq()" id="fh">&lt;</button>
 <button class="no" id="no" onclick="non()">&#8743;</button>
 <div class="black" id="black">
 <a href="1.png" download="LHY/1.png"><img src="xz.svg" alt="图片" class="blackimg" ></a>
@@ -124,6 +135,14 @@ var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s";
 
 }
 }
+}
+function mybq(){
+if(history.length==1){
+window.open("index.html")
+}else{
+window.history.go(-1)
+}
+
 }
 
 </script>

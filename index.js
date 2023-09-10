@@ -2,7 +2,6 @@ document.documentElement.scrollTop = 0;
 var input, filter, table, tr, td, ssi, txtValue;
  document.cookie="y=1";
  
- 
 
 var a=1;
 var b=1;
@@ -293,75 +292,45 @@ var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.st
  }
  }
  function divB(){
- var bqq = document.getElementById('bqq');bqq.style.transition = "1s"; bqq.style.marginLeft = "100vw";
-
- document.body.style.overflow = 'hidden';
+ window.location.assign("1.html")
  }
   function bq(){
  var bqq = document.getElementById('bqq');bqq.style.transition = "1s"; bqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
 function divC(){
- var abqq = document.getElementById('abqq');abqq.style.transition = "1s"; abqq.style.marginLeft = "100vw";
-
- document.body.style.overflow = 'hidden';
+window.location.assign("2.html")
  }
   function abq(){
  var abqq = document.getElementById('abqq');abqq.style.transition = "1s"; abqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
  function divE(){
- var bbqq = document.getElementById('bbqq');bbqq.style.transition = "1s"; bbqq.style.marginLeft = "100vw";
-
- document.body.style.overflow = 'hidden';
+ window.location.assign("3.html")
  }
   function bbq(){
  var bbqq = document.getElementById('bbqq');bbqq.style.transition = "1s"; bbqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
   function divF(){
- var dbqq = document.getElementById('dbqq');dbqq.style.transition = "1s"; dbqq.style.marginLeft = "100vw";
-
- document.body.style.overflow = 'hidden';
+window.location.assign("5.html")
  }
   function dbq(){
  var dbqq = document.getElementById('dbqq');dbqq.style.transition = "1s"; dbqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
  function divD(){
- var cbqq = document.getElementById('cbqq');cbqq.style.transition = "1s"; cbqq.style.marginLeft = "100vw";
-
- document.body.style.overflow = 'hidden';
+ window.location.assign("4.html")
  }
   function cbq(){
  var cbqq = document.getElementById('cbqq');cbqq.style.transition = "1s"; cbqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
  function lia(){
- var fbqq = document.getElementById('fbqq');fbqq.style.transition = "1s"; fbqq.style.marginLeft = "100vw";
- I=I+1;
- if(I==3){
- I=1;
- }
-var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "1s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opacity= "1";
-var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(0deg)";
- document.body.style.overflow = 'hidden';
+ window.location.assign("f.html")
  }
   function limy(){
- var mybqq = document.getElementById('mybqq');mybqq.style.transition = "1s"; mybqq.style.marginLeft = "100vw";
- I=I+1;
- if(I==3){
- I=1;
- }
-var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
- document.body.style.overflow = 'hidden';
- var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "1s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opacity= "1";
-var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(0deg)";
+ window.location.assign("my.html")
  }
   function fbq(){
  var fbqq = document.getElementById('fbqq');fbqq.style.transition = "1s"; fbqq.style.marginLeft = "-100vw";
@@ -433,9 +402,7 @@ var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opa
 var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(0deg)";
  document.body.style.overflow = 'hidden';
  }
- function lic(){
-window.open('pl.html');
- }
+
 
 
 var ssn=1;

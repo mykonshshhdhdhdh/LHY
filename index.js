@@ -57,17 +57,12 @@ function yue(){
  }
  if(y==2){
 document.cookie="y=2";
- var bq = document.getElementById('bq');bq.style.transition = "1s"; bq.style.background = "#565656";
+ 
 var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "#565656";
  var ssa = document.getElementById('ssa');ssa.style.transition = "1s"; ssa.style.background = "#565656";
- var abq = document.getElementById('abq');abq.style.transition = "1s"; abq.style.background = "#565656";
- var bbq = document.getElementById('bbq');bbq.style.transition = "1s"; bbq.style.background = "#565656";
+
   var sz = document.getElementById('sz');sz.style.transition = "1s"; sz.style.background = "#565656";
- var cbq = document.getElementById('cbq');cbq.style.transition = "1s"; cbq.style.background = "#565656";
-  var fbq = document.getElementById('fbq');fbq.style.transition = "1s"; fbq.style.background = "#565656";
-var mybq = document.getElementById('mybq');mybq.style.transition = "1s"; mybq.style.background = "#565656";
-  
-   var dbq = document.getElementById('dbq');dbq.style.transition = "1s"; dbq.style.background = "#565656";
+
    
    
  var A = document.getElementById('divB');A.style.transition = "1s"; A.style.background = "#565656";
@@ -94,20 +89,16 @@ var mybq = document.getElementById('mybq');mybq.style.transition = "1s"; mybq.st
 var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "white";
 var ssa = document.getElementById('ssa');ssa.style.transition = "1s"; ssa.style.background = "white";
  document.cookie="y=1";
-    var dbq = document.getElementById('dbq');dbq.style.transition = "1s"; dbq.style.background = "white";
+
     
    var FF = document.getElementById('FF');FF.style.transition = "1s"; FF.style.background = "white";
      var F = document.getElementById('divF');F.style.transition = "1s"; F.style.background = "white";
-  var bq = document.getElementById('bq');bq.style.transition = "1s"; bq.style.background = "white";
+
  var A = document.getElementById('divB');A.style.transition = "1s"; A.style.background = "white";
  var sz = document.getElementById('sz');sz.style.transition = "1s"; sz.style.background = "white";
 var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.background = "white";
   var B = document.getElementById('divC');B.style.transition = "1s"; B.style.background = "white";
-   var fbq = document.getElementById('fbq');fbq.style.transition = "1s"; fbq.style.background = "white"; 
-   var abq = document.getElementById('abq');abq.style.transition = "1s"; abq.style.background = "white";
- var bbq = document.getElementById('bbq');bbq.style.transition = "1s"; bbq.style.background = "white";
- var cbq = document.getElementById('cbq');cbq.style.transition = "1s"; cbq.style.background = "white";
-  var mybq = document.getElementById('mybq');mybq.style.transition = "1s"; mybq.style.background = "white";
+
     var D = document.getElementById('divE');D.style.transition = "1s"; D.style.background = "white";
  var DD = document.getElementById('DD');DD.style.transition = "1s"; DD.style.background = "white";
   var CF = document.getElementById('CF');CF.style.transition = "1s"; CF.style.background = "white";

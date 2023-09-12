@@ -2,17 +2,7 @@ document.documentElement.scrollTop = 0;
 var input, filter, table, tr, td, ssi, txtValue;
  
 var y = document.cookie; 
-if(y=="y=2")
-{
- yue();
-}
-if(y=="y=1")
-{
-yue();
-}
-if(y==""){
-document.cookie="y=1";
-}
+
 
 var a=1;
 var b=1;
@@ -125,7 +115,21 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
    } 
  }
 }
+function ks(){
+if(y==""){
+document.cookie="y=1";
+}
+if(y=="1"){
+y=2;
+yue();
+}
+if(y=="2"){
+y=1;
+yue();
+}
+}
 function wx(){
+
  a=a+1;
  if(a==3){
  a=1;

@@ -116,9 +116,6 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
  }
 }
 function ks(){
-if(y==""){
-document.cookie="y=1";
-}
 if(y=="1"){
 y1=2;
 yue();

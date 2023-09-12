@@ -1,6 +1,17 @@
 document.documentElement.scrollTop = 0;
 var input, filter, table, tr, td, ssi, txtValue;
- document.cookie="y=1";
+var y = document.cookie; 
+if(y=="y=2")
+{
+ document.body.style.background= "#565656";
+}
+if(y=="y=1")
+{
+document.body.style.background= "white";
+}
+if(y==""){
+document.cookie="y=1";
+}
  
 
 var a=1;

@@ -8,7 +8,7 @@ var a=1;
 var b=1;
 var c=1;
 var t=1;
-var y=1;
+var y1=1;
 var I=1;
 var Ic=1;
 var s=1;
@@ -52,11 +52,11 @@ document.getElementById("tim").innerHTML= now ;
 }
 
 function yue(){
- y=y+1;
- if(y==3){
- y=1;
+ y1=y1+1;
+ if(y1==3){
+ y1=1;
  }
- if(y==2){
+ if(y1==2){
 document.cookie="y=2";
  
 var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "#565656";
@@ -86,7 +86,7 @@ var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.
     var dq = document.getElementById('dq');dq.style.transition = "1s"; dq.style.background = "#565656";
    } 
  }
- if(y==1){
+ if(y1==1){
 var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "white";
 var ssa = document.getElementById('ssa');ssa.style.transition = "1s"; ssa.style.background = "white";
  document.cookie="y=1";
@@ -120,11 +120,11 @@ if(y==""){
 document.cookie="y=1";
 }
 if(y=="1"){
-y=2;
+y1=2;
 yue();
 }
 if(y=="2"){
-y=1;
+y1=1;
 yue();
 }
 }

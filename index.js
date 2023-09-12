@@ -116,11 +116,11 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
  }
 }
 function ks(){
-if(y=="1"){
+if(y=="y=1"){
 y1=2;
 yue();
 }
-if(y=="2"){
+if(y=="y=2"){
 y1=1;
 yue();
 }

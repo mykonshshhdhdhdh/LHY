@@ -136,11 +136,11 @@ var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s";
 }
 }
 }
-document.write(history.length);
+
 function mybq(){
 
 if(history.length==1){
-window.open("index.html")
+window.location.assign("index.html")
 }else{
 window.history.go(-1)
 }

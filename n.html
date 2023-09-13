@@ -43,6 +43,29 @@ height:30vh;
 background-color:#00FFB7;
 border-style:none;
 }
+#fh {
+text-decoration:none;
+font-size:14vw;
+color:#FF88B9;
+position:fixed;
+top:0px;
+left:0px;
+border-style:none;
+background-color:transparent;
+z-index: 202;
+}
+@media(min-width: 640px) {
+#fh {
+text-decoration:none;
+font-size:7vw;
+color:#FF88B9;
+position:fixed;
+top:0px;
+border-style:none;
+background-color:transparent;
+z-index: 202;
+}
+}
 </style>
 
 </head>
@@ -61,6 +84,16 @@ if(y=="y=1")
 document.body.style.background= "white";
 }
 </script>
+<button onclick="mybq()" id="fh">&lt;</button>
+<script>
+function mybq(){
+if(history.length==1){
+window.open("index.html")
+}else{
+window.history.back()
+}
+}
+</script>
 <h3>意见反馈</h3>
 <div id="a">
 
@@ -72,7 +105,7 @@ document.body.style.background= "white";
            <div class="input-group">
                <input type="text" name="name" class="input__field input-carrier">
                <label class="input__label" for="input-1">
-                   <span class="input__label-content input__label-content--nao">您的姓名</span>
+                   <span class="input__label-content input__label-content--nao">您的昵称</span>
                </label>
            </div>
 
@@ -101,6 +134,7 @@ $(document).on('click', '#submit', function(evt){
         evt.preventDefault();  //阻止提交表单到第三方网站去
     }
 });
+
 </script>
 </div>
 </body>

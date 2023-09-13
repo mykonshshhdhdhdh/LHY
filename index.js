@@ -177,7 +177,7 @@ var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.st
  }
  }
  function yx(){
-window.open('n.html');
+window.location.assign("n.html")
 var audio=document.getElementById("audio");
 }
 

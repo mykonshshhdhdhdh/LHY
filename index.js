@@ -295,7 +295,7 @@ var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.st
  }
  }
  function divB(){
- window.location.assign("1.html")
+ window.open("1.html")
  }
   function bq(){
  var bqq = document.getElementById('bqq');bqq.style.transition = "1s"; bqq.style.marginLeft = "-100vw";

@@ -132,9 +132,12 @@ var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s";
 }
 function mybq(){
 if(history.length==1){
+localStorage.setItem("go",0);
 window.location.assign("index.html")
 }else{
+localStorage.setItem("go",1);
 window.history.go(-1)
+
 }
 
 }

@@ -3,6 +3,12 @@ var input, filter, table, tr, td, ssi, txtValue;
  
 var y = document.cookie; 
 
+if(localStorage.go==1){
+document.documentElement.scrollTop = localStorage.top;
+localStorage.setItem("go",0);
+localStorage.setItem("top",0);
+}
+
 
 var a=1;
 var b=1;
@@ -295,6 +301,7 @@ var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.st
  }
  }
  function divB(){
+ localStorage.setItem("top", document.documentElement.scrollTop);
  window.location.assign("1.html")
  }
   function bq(){
@@ -302,6 +309,7 @@ var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.st
 document.body.style.overflow = 'auto';
  }
 function divC(){
+localStorage.setItem("top", document.documentElement.scrollTop);
 window.location.assign("2.html")
  }
   function abq(){
@@ -309,6 +317,7 @@ window.location.assign("2.html")
 document.body.style.overflow = 'auto';
  }
  function divE(){
+ localStorage.setItem("top", document.documentElement.scrollTop);
  window.location.assign("3.html")
  }
   function bbq(){
@@ -316,6 +325,7 @@ document.body.style.overflow = 'auto';
 document.body.style.overflow = 'auto';
  }
   function divF(){
+  localStorage.setItem("top", document.documentElement.scrollTop);
 window.location.assign("5.html")
  }
   function dbq(){
@@ -323,6 +333,7 @@ window.location.assign("5.html")
 document.body.style.overflow = 'auto';
  }
  function divD(){
+ localStorage.setItem("top", document.documentElement.scrollTop);
  window.location.assign("4.html")
  }
   function cbq(){

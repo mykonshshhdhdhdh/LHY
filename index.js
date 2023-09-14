@@ -119,7 +119,7 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
 }
 function ks(){
 
-document.documentElement.scrollTop = localStorage.top;
+document.documentElement.scrollTop = go;
 localStorage.setItem("go",0);
 localStorage.setItem("top",0);
 

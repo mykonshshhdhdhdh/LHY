@@ -1,4 +1,4 @@
-document.documentElement.scrollTop = 0;
+
 var input, filter, table, tr, td, ssi, txtValue;
  
 var y = document.cookie; 
@@ -122,6 +122,8 @@ if(localStorage.go==1){
 document.documentElement.scrollTop = localStorage.top;
 localStorage.setItem("go",0);
 localStorage.setItem("top",0);
+}else{
+document.documentElement.scrollTop = 0;
 }
 if(y=="y=1"){
 y1=2;

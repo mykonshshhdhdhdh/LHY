@@ -3,11 +3,7 @@ var input, filter, table, tr, td, ssi, txtValue;
  
 var y = document.cookie; 
 
-if(localStorage.go==1){
-document.documentElement.scrollTop = localStorage.top;
-localStorage.setItem("go",0);
-localStorage.setItem("top",0);
-}
+
 
 
 var a=1;
@@ -122,6 +118,11 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
  }
 }
 function ks(){
+if(localStorage.go==1){
+document.documentElement.scrollTop = localStorage.top;
+localStorage.setItem("go",0);
+localStorage.setItem("top",0);
+}
 if(y=="y=1"){
 y1=2;
 yue();

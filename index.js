@@ -1,7 +1,7 @@
 document.documentElement.scrollTop = 0;
 var input, filter, table, tr, td, ssi, txtValue;
  
-var y = document.cookie; 
+var y = getCookie("y");
 
 
 var a=1;
@@ -116,11 +116,11 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
  }
 }
 function ks(){
-if(y=="y=1"){
+if(y=="1"){
 y1=2;
 yue();
 }
-if(y=="y=2"){
+if(y=="2"){
 y1=1;
 yue();
 }

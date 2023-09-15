@@ -54,6 +54,7 @@ document.getElementById("tim").innerHTML= now ;
 }
 
 function yue(){
+
  y1=y1+1;
  if(y1==3){
  y1=1;
@@ -281,15 +282,15 @@ function IE(){
  }
  if(I==2){
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "85%";
- var ca= document.getElementById('c-a');ca.style.transition = "1s"; ca.style.transform = "rotate(30deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opacity= "0";
-var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(-30deg)";
+ var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)translate(35%)";
+var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "0";
+var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)translate(35%)";
  }
  if(I==1){
 var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "1s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opacity= "1";
-var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(0deg)";
+var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
+var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "1";
+var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
  }
  }
     function IETX(){
@@ -421,9 +422,9 @@ document.body.style.overflow = 'auto';
  }
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "1s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "1s"; cb.style.opacity= "1";
-var cc= document.getElementById('c-c');cc.style.transition = "1s"; cc.style.transform = "rotate(0deg)";
+var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
+var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "1";
+var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
  document.body.style.overflow = 'hidden';
  }
 

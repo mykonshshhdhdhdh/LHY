@@ -48,13 +48,14 @@ var ts = document.getElementById('ts');ts.style.display= "none";
 
 		</script>
 <body id="body" class="body" onpageshow="ks()">
+<div id="black-div"></div>
 <div id="ts" ><p id="tsb">✎..欢迎来到Kondaisuki的小屋！！！</p><p id="tsc" onclick="ts()">X</p></div>
 <script src="happy.js"></script>
 <div class="divq" >
 <button onclick="tx()" class="butw" id="butw">
 <img src="头像.png" alt="图片" class="imgq">
 </button>
-<div class="dzja">
+<div class="dzja" >
 <p class="dzj" onselectstart="return false;">清风明月为知己</p>
 </div>
 
@@ -322,6 +323,9 @@ audio.play();
 <p><b>光标设置</b></p>
 <p id="szd">光标爆炸效果
 <button onclick="szd()" id="szdbutton"></button></p>
+<p><b>深色设置</b></p>
+<p id="szd">深色程度：
+<input type="range"  value="50"  id="szblack" oninput="szblack()" ></p>
 <button onclick="szno()" id="szno">关闭页面</button>
 </div>
 

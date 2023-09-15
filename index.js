@@ -351,6 +351,9 @@ document.body.style.overflow = 'auto';
   function limy(){
  window.location.assign("my.html")
  }
+   function libook(){
+ window.location.assign("book.html")
+ }
   function fbq(){
  var fbqq = document.getElementById('fbqq');fbqq.style.transition = "1s"; fbqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';

@@ -13,7 +13,10 @@
 
 <style>
 * {
-outline: none;
+outline:none;
+}
+*:focus {
+outline:none;
 }
 #sun {
 pointer-events: none;
@@ -69,7 +72,7 @@ border-color:red;
 }
 #father-div-b {
 
-border-color:yellow;
+border-color:#ffeb46;
 
 }
 #father-b-c {
@@ -192,7 +195,7 @@ k=k.replace(ps, `<spen style="font-size:0.8em">`);
 k=k.replace(red, `<spen style="color:red;">`);
 
 var yellow=/y_/g;
-k=k.replace(yellow, `<spen style="color:yellow;">`);
+k=k.replace(yellow, `<spen style="color:#ffe300;">`);
 
 document.getElementById("body").innerHTML = k;
 }
@@ -213,7 +216,7 @@ var pn=/n_/g;
 var pnk=/&n/g;
 var pd=/d_/g;
 var pdk=/&d/g;
-document.getElementById('head').value=document.getElementById('head').value.replace(yellow, `<spen style="color:yellow;">`);
+document.getElementById('head').value=document.getElementById('head').value.replace(yellow, `<spen style="color:#ffe300;">`);
 document.getElementById('head').value=document.getElementById('head').value.replace(pb, `<b>`);
 document.getElementById('head').value=document.getElementById('head').value.replace(pbk, `</b>`);
 document.getElementById('head').value=document.getElementById('head').value.replace(pd, `<del>`);
@@ -253,7 +256,7 @@ var aqy = aqyxn+"年"+aqyxm+"月"+aqyxr+"日"+aqyxh+":"+aqyxmin+":"+aqyxs;
 document.getElementById("body").innerHTML+=`<div >`+"<small>"+aqy+"</small>"+`<p contenteditable="false">`+p+"</b></i></p>"+`<button onclick="be(this)" contenteditable="false">修改</button>`+`<button onclick="none(this)" contenteditable="false">删除</button>`+"</div>";
 var ccr =/<spen style="color:red;">/g;
 var cc = document.getElementById("body").innerHTML.replace(ccr, `r_`);
-var ccy =/<spen style="color:yellow;">/g;
+var ccy =/<spen style="color:#ffe300;">/g;
 var ccs = /<spen style="font-size:0.8em">/g;
 var cc = document.getElementById("body").innerHTML.replace(ccy, `y_`);
 var cc = document.getElementById("body").innerHTML.replace(ccs, `s_`);

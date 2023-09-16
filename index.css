@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 pointer-events: none;
 background:none;
 width:100vw;
-height:100vh;
+height:200vh;
 position:fixed;
 	top:0px;
 	left:0px;
@@ -1182,7 +1182,7 @@ input[type=range]::-webkit-slider-runnable-track {
     box-shadow:}
     
 input[type=range]:focus {
-    outline: none
+    outline: none;
     }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;

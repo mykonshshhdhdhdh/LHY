@@ -45,6 +45,38 @@ word-wrap: break-word;
 background:#eee;
 margin-top:15vw;
 }
+#father {
+display:flex;
+margin-bottom:-2vw;
+}
+#father div {
+width:2.5vw;
+height:2.5vw;
+border-style:solid;
+margin-left:2vw;
+border-width:1.5vw;
+background:white;
+border-radius:640px;
+}
+
+#father-div-a {
+
+border-color:red;
+
+}
+#father-div-b {
+
+border-color:yellow;
+
+}
+#father-b-c {
+width:2.5vw;
+height:2.5vw;
+font-size:6vw;
+margin-left:2vw;
+margin-top:-2vw;
+color:#979797;
+}
 #body div {
 width:92vw;
 background:#eee;
@@ -94,8 +126,14 @@ var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; 
 </script>
 <button onclick="mybq()" id="fh">&lt;</button>
 <div>
+
 <textarea id="head" oninput="headcolor()" >
 </textarea>
+<div id="father">
+<div  id="father-div-a" onclick="diva()"></div>
+<div  id="father-div-b" onclick="divb()"></div>
+<p  id="father-b-c" onclick="divc()"><b>B</b></p>
+</div>
 <br><button onclick="bod()" id="heada">确定</button>
 <button onclick="kil()">清除所有</button>
 </div>
@@ -105,14 +143,36 @@ var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; 
 
 var k=localStorage.body;
 if(k!=undefined){
+var red=/r_/g;
+
+k=k.replace(red, `<spen style="color:red;">`);
+
+var yellow=/y_/g;
+k=k.replace(yellow, `<spen style="color:yellow;">`);
+
 document.getElementById("body").innerHTML = k;
 }
 function bod(){
+document.getElementById('head').value=document.getElementById('head').value.replace(/</g, "&lt");
+document.getElementById('head').value=document.getElementById('head').value.replace(/>/g, "&gt");
+var red=/r_/g;
+var color=/&e/g;
+var yellow=/y_/g;
+var pb=/b_/g;
+var pbk=/&b/g;
+document.getElementById('head').value=document.getElementById('head').value.replace(yellow, `<spen style="color:yellow;">`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pb, `<b>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pbk, `</b>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(red, `<spen style="color:red;">`);
+document.getElementById('head').value=document.getElementById('head').value.replace(color, "</spen>");
 var p=document.getElementById('head').value;
-
 if(p==""){
 return;
 }
+//判断输入为零时，跳出脚本
+var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#FF88B9";
+document.getElementById('head').value="";
+
 //如果输入为零，则跳出脚本
 var aqyxd = new Date();
 var aqyxn = aqyxd.getFullYear();
@@ -130,7 +190,11 @@ aqyxmin="0"+aqyxmin;
 var aqy = aqyxn+"年"+aqyxm+"月"+aqyxr+"日"+aqyxh+":"+aqyxmin+":"+aqyxs;
 
 document.getElementById("body").innerHTML+=`<div >`+"<small>"+aqy+"</small>"+`<p contenteditable="false">`+p+"</p>"+`<button onclick="be(this)" contenteditable="false">修改</button>`+`<button onclick="none(this)" contenteditable="false">删除</button>`+"</div>";
-localStorage.setItem("body",document.getElementById("body").innerHTML);
+var ccr =/<spen style="color:red;">/g;
+var cc = document.getElementById("body").innerHTML.replace(ccr, `r_`);
+var ccy =/<spen style="color:yellow;">/g;
+var cc = document.getElementById("body").innerHTML.replace(ccy, `y_`);
+localStorage.setItem("body",cc);
 }
 function none(a){
 var r=confirm("确定删除？");
@@ -179,13 +243,60 @@ var heada = document.getElementById('heada');heada.style.transition = "0s"; head
 }else{
 var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#ff3e8d";
 
-document.getElementById('head').value=document.getElementById('head').value.replace(/</, "&lt");
 
-
-document.getElementById('head').value=document.getElementById('head').value.replace(/>/, "&gt");
 
 }
 
+}
+function diva(){
+var diva = document.getElementById('father-div-a');
+var divb = document.getElementById('father-div-b');
+//获取按钮
+if(diva.style.background != "red"){
+//判断红色是否按下
+if(divb.style.background == "yellow"){
+//判断黄色是否按下
+divb.style.transition = "0s"; divb.style.background = "white";
+document.getElementById('head').value+="&e ";}
+diva.style.transition = "0s"; diva.style.background = "red";
+document.getElementById('head').value+="r_";
+
+}else{
+//当红色没点击时
+diva.style.transition = "0s"; diva.style.background = "white";
+document.getElementById('head').value+="&e";
+}
+}
+function divb(){
+var diva = document.getElementById('father-div-a');
+var divb = document.getElementById('father-div-b');
+if(divb.style.background != "yellow"){
+if(diva.style.background == "red"){
+diva.style.transition = "0s"; diva.style.background = "white";
+document.getElementById('head').value+="&e ";}
+divb.style.transition = "0s"; divb.style.background = "yellow";
+document.getElementById('head').value+="y_";
+
+}else{
+divb.style.transition = "0s"; divb.style.background = "white";
+document.getElementById('head').value+="&e";
+}
+}
+function divc(){
+var diva = document.getElementById('father-div-a');
+var divb = document.getElementById('father-div-b');
+var divc = document.getElementById('father-b-c');
+//获取按钮
+if(divc.style.color != "black"){
+//判断按钮是否按下
+divc.style.transition = "0s"; divc.style.color = "black";
+document.getElementById('head').value+="b_";
+
+}else{
+//按钮没有按下时执行
+divc.style.transition = "0s"; divc.style.color = "#979797";
+document.getElementById('head').value+="&b";
+}
 }
 function mybq(){
 

@@ -77,13 +77,49 @@ margin-left:2vw;
 margin-top:-2vw;
 color:#979797;
 }
+#father-i-d {
+width:2.5vw;
+height:2.5vw;
+font-size:6vw;
+margin-left:5vw;
+margin-top:-2vw;
+color:#979797;
+}
+#father-s-e {
+width:2.5vw;
+height:2.5vw;
+font-size:6vw;
+margin-left:5vw;
+margin-top:-2vw;
+color:#979797;
+}
+#father-n-f {
+width:2.5vw;
+height:2.5vw;
+font-size:6vw;
+margin-left:5vw;
+margin-top:-2vw;
+color:#979797;
+}
+#father-d-g {
+width:2.5vw;
+height:2.5vw;
+font-size:6vw;
+margin-left:5vw;
+margin-top:-2vw;
+color:#979797;
+}
 #body div {
 width:92vw;
 background:#eee;
 margin-top:2vw;
+overflow:scroll;
 }
 #body small {
 opacity:0.2;
+}
+#body p {
+word-break: break-word;
 }
 #fh {
 text-decoration:none;
@@ -133,6 +169,10 @@ var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; 
 <div  id="father-div-a" onclick="diva()"></div>
 <div  id="father-div-b" onclick="divb()"></div>
 <p  id="father-b-c" onclick="divc()"><b>B</b></p>
+<p  id="father-i-d" onclick="divd()"><i><code>I</code></i></p>
+<p  id="father-s-e" onclick="dive()"><small><code>A</code></small></p>
+<p  id="father-n-f" onclick="divf()"><ins><code>A</code></ins></p>
+<p  id="father-d-g" onclick="divg()"><del><code>A</code></del></p>
 </div>
 <br><button onclick="bod()" id="heada">确定</button>
 <button onclick="kil()">清除所有</button>
@@ -144,7 +184,8 @@ var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; 
 var k=localStorage.body;
 if(k!=undefined){
 var red=/r_/g;
-
+var ps=/s_/g;
+k=k.replace(ps, `<spen style="font-size:0.8em">`);
 k=k.replace(red, `<spen style="color:red;">`);
 
 var yellow=/y_/g;
@@ -153,6 +194,7 @@ k=k.replace(yellow, `<spen style="color:yellow;">`);
 document.getElementById("body").innerHTML = k;
 }
 function bod(){
+
 document.getElementById('head').value=document.getElementById('head').value.replace(/</g, "&lt");
 document.getElementById('head').value=document.getElementById('head').value.replace(/>/g, "&gt");
 var red=/r_/g;
@@ -160,9 +202,25 @@ var color=/&e/g;
 var yellow=/y_/g;
 var pb=/b_/g;
 var pbk=/&b/g;
+var pi=/i_/g;
+var pik=/&i/g;
+var ps=/s_/g;
+var psk=/&s/g;
+var pn=/n_/g;
+var pnk=/&n/g;
+var pd=/d_/g;
+var pdk=/&d/g;
 document.getElementById('head').value=document.getElementById('head').value.replace(yellow, `<spen style="color:yellow;">`);
 document.getElementById('head').value=document.getElementById('head').value.replace(pb, `<b>`);
 document.getElementById('head').value=document.getElementById('head').value.replace(pbk, `</b>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pd, `<del>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pdk, `</del>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pn, `<ins>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pnk, `</ins>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(ps, `<spen style="font-size:0.8em">`);
+document.getElementById('head').value=document.getElementById('head').value.replace(psk, `</spen>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pi, `<i>`);
+document.getElementById('head').value=document.getElementById('head').value.replace(pik, `</i>`);
 document.getElementById('head').value=document.getElementById('head').value.replace(red, `<spen style="color:red;">`);
 document.getElementById('head').value=document.getElementById('head').value.replace(color, "</spen>");
 var p=document.getElementById('head').value;
@@ -189,11 +247,13 @@ aqyxmin="0"+aqyxmin;
 }
 var aqy = aqyxn+"年"+aqyxm+"月"+aqyxr+"日"+aqyxh+":"+aqyxmin+":"+aqyxs;
 
-document.getElementById("body").innerHTML+=`<div >`+"<small>"+aqy+"</small>"+`<p contenteditable="false">`+p+"</p>"+`<button onclick="be(this)" contenteditable="false">修改</button>`+`<button onclick="none(this)" contenteditable="false">删除</button>`+"</div>";
+document.getElementById("body").innerHTML+=`<div >`+"<small>"+aqy+"</small>"+`<p contenteditable="false">`+p+"</b></i></p>"+`<button onclick="be(this)" contenteditable="false">修改</button>`+`<button onclick="none(this)" contenteditable="false">删除</button>`+"</div>";
 var ccr =/<spen style="color:red;">/g;
 var cc = document.getElementById("body").innerHTML.replace(ccr, `r_`);
 var ccy =/<spen style="color:yellow;">/g;
+var ccs = /<spen style="font-size:0.8em">/g;
 var cc = document.getElementById("body").innerHTML.replace(ccy, `y_`);
+var cc = document.getElementById("body").innerHTML.replace(ccs, `s_`);
 localStorage.setItem("body",cc);
 }
 function none(a){
@@ -250,14 +310,11 @@ var heada = document.getElementById('heada');heada.style.transition = "0s"; head
 }
 function diva(){
 var diva = document.getElementById('father-div-a');
-var divb = document.getElementById('father-div-b');
+
 //获取按钮
 if(diva.style.background != "red"){
 //判断红色是否按下
-if(divb.style.background == "yellow"){
-//判断黄色是否按下
-divb.style.transition = "0s"; divb.style.background = "white";
-document.getElementById('head').value+="&e ";}
+
 diva.style.transition = "0s"; diva.style.background = "red";
 document.getElementById('head').value+="r_";
 
@@ -268,12 +325,10 @@ document.getElementById('head').value+="&e";
 }
 }
 function divb(){
-var diva = document.getElementById('father-div-a');
+
 var divb = document.getElementById('father-div-b');
 if(divb.style.background != "yellow"){
-if(diva.style.background == "red"){
-diva.style.transition = "0s"; diva.style.background = "white";
-document.getElementById('head').value+="&e ";}
+
 divb.style.transition = "0s"; divb.style.background = "yellow";
 document.getElementById('head').value+="y_";
 
@@ -283,8 +338,7 @@ document.getElementById('head').value+="&e";
 }
 }
 function divc(){
-var diva = document.getElementById('father-div-a');
-var divb = document.getElementById('father-div-b');
+
 var divc = document.getElementById('father-b-c');
 //获取按钮
 if(divc.style.color != "black"){
@@ -296,6 +350,66 @@ document.getElementById('head').value+="b_";
 //按钮没有按下时执行
 divc.style.transition = "0s"; divc.style.color = "#979797";
 document.getElementById('head').value+="&b";
+}
+}
+function divd(){
+
+var divd = document.getElementById('father-i-d');
+//获取按钮
+if(divd.style.color != "black"){
+//判断按钮是否按下
+divd.style.transition = "0s"; divd.style.color = "black";
+document.getElementById('head').value+="i_";
+
+}else{
+//按钮没有按下时执行
+divd.style.transition = "0s"; divd.style.color = "#979797";
+document.getElementById('head').value+="&i";
+}
+}
+function dive(){
+
+var dive = document.getElementById('father-s-e');
+//获取按钮
+if(dive.style.color != "black"){
+//判断按钮是否按下
+dive.style.transition = "0s"; dive.style.color = "black";
+document.getElementById('head').value+="s_";
+
+}else{
+//按钮没有按下时执行
+dive.style.transition = "0s"; dive.style.color = "#979797";
+document.getElementById('head').value+="&s";
+}
+}
+function divf(){
+
+var divf = document.getElementById('father-n-f');
+//获取按钮
+if(divf.style.color != "black"){
+//判断按钮是否按下
+divf.style.transition = "0s"; divf.style.color = "black";
+document.getElementById('head').value+="n_";
+
+}else{
+//按钮没有按下时执行
+divf.style.transition = "0s"; divf.style.color = "#979797";
+document.getElementById('head').value+="&n";
+}
+}
+function divg(){
+
+var divg = document.getElementById('father-d-g');
+//获取按钮
+if(divg.style.color != "black"){
+//判断按钮是否按下
+divg.style.transition = "0s"; divg.style.color = "black";
+document.getElementById('head').value+="d_";
+
+}else{
+//按钮没有按下时执行
+divg.style.transition = "0s"; divg.style.color = "#979797";
+document.getElementById('head').value+="&d";
 }
 }
 function mybq(){

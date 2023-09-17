@@ -126,6 +126,8 @@ var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.
 function ks(){
 bmusic.pause()
 var musicname=localStorage.music
+bmusic=document.querySelector('.bmusic')
+amusic= document.querySelector('.amusic');
 switch(musicname)
 {
     case "1":
@@ -150,8 +152,7 @@ switch(musicname)
     amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3"
         break;
         }
-bmusic=document.querySelector('.bmusic')
-amusic= document.querySelector('.amusic');
+
 
 
 bmusic.currentTime=localStorage.time;

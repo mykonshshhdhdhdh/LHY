@@ -1,4 +1,13 @@
 var n=0;
+
+if(document.body.style.background=="#565656"){
+yuea.setAttribute("src","yan.svg");
+
+
+}else{
+yuea.setAttribute("src","yue.svg");
+
+}
 function night(){
 n=n+1;
 if(n==3){

@@ -1,4 +1,22 @@
-
+.yue {
+position:fixed;
+	bottom:10vh;
+	left:1vw;
+	background-color:transparent;
+	width:5vw;
+	height:5vw;
+	border-style:none;
+    z-index: 999999991;
+    outline: none;
+}
+.yuea {
+position:fixed;
+	bottom:50px;
+	left:0vw;
+	width:5vw;
+	height:5vw;
+    z-index: 999999991;
+}
 .BA {
 width:100%;
 }

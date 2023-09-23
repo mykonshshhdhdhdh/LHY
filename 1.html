@@ -30,13 +30,19 @@ document.body.style.background= "white";
 }
 </script>
 <button class="BBA" onclick="blackA()">
+
+<button class="yue" id="yue" onclick="night()">
+<img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
+</button>
+<script src="night.js"></script>
+
 <img src="1.png" alt="图片" class="BA" loading="lazy"></img>
 </button>
 <p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月15日</small></p>
 <p class="BE">标签:</p>
 <p class="BD">·动漫</p>
 <p class="BB"><b>推荐一部番剧</b></p>
-<p class="BC">《一周的朋友》如其名，就是每周都会重置与朋友的记忆的女主藤宫香织与男主长谷交朋友的故事。长谷在被香织忘了无数次，好不容易培养的感情被遗忘的情况下，仍坚持着，数次说出“请再次与我交朋友吧”香织也在长谷的帮助下渐渐能记起感情。这是一部纯爱番，不过最后两人没有交往，仍是朋友相称，不过感情早以比朋友更高一层了。长谷有一全程助攻的好基友桐生，香织也交到了一位有健忘症的女生沙希。沙希是桐生小学的同班同学，这两人之间很甜的。</p>
+<p class="BC" >《一周的朋友》如其名，就是每周都会重置与朋友的记忆的女主藤宫香织与男主长谷交朋友的故事。长谷在被香织忘了无数次，好不容易培养的感情被遗忘的情况下，仍坚持着，数次说出“请再次与我交朋友吧”香织也在长谷的帮助下渐渐能记起感情。这是一部纯爱番，不过最后两人没有交往，仍是朋友相称，不过感情早以比朋友更高一层了。长谷有一全程助攻的好基友桐生，香织也交到了一位有健忘症的女生沙希。沙希是桐生小学的同班同学，这两人之间很甜的。</p>
 <br>
 <br>
 <br>
@@ -64,9 +70,10 @@ gitalk.render('gitalk-container')
 <button class="no" id="no" onclick="non()">&#8743;</button>
 <div class="black" id="black">
 <a href="1.png" download="LHY/1.png"><img src="xz.svg" alt="图片" class="blackimg" ></a>
-<img decoding="async" src="1.png" alt="一周的朋友" class="blackA" loading="lazy" id="blackA" ondblclick="h()">
+<img decoding="async" src="1.png" alt="一周的朋友" class="blackA" loading="lazy" id="blackA" ondblclick="h()" >
 <button class="blackbut" onclick="none()"></button>
 </div> 
+
 <script>
 
 window.onscroll = function() {scrollFunction()};

@@ -15,6 +15,7 @@
 * {
 outline:none;
 }
+
 #sun {
 pointer-events: none;
 background:none;
@@ -152,15 +153,15 @@ z-index: 202;
 <body>
 <div id="sun"></div>
 <script>
-
+var sun = document.getElementById('sun');sun.style.transition = "0s"; sun.style.opacity = localStorage.black;
 var y = document.cookie; 
 if(y=="y=2")
 {
- var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; blackdiv.style.background = "black";
+ var sun = document.getElementById('sun');sun.style.transition = "0s"; sun.style.background = "black";
 }
 if(y=="y=1")
 {
-var blackdiv = document.getElementById('sun');blackdiv.style.transition = "1s"; blackdiv.style.background = "none";
+var sun = document.getElementById('sun');sun.style.transition = "0s"; sun.style.background = "none";
 }
 </script>
 <button onclick="mybq()" id="fh">&lt;</button>

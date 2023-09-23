@@ -1,8 +1,8 @@
 
 var input, filter, table, tr, td, ssi, txtValue;
- 
+// 创建搜索功能所需变量 
 var y = document.cookie; 
-
+// 创建变量“y”并赋值cookie
 
 
 
@@ -18,9 +18,10 @@ var Ic=1;
 var s=1;
 var sb=1;
 var sc=1;
-
+// 创建变量
 
 setInterval("time()","1000");
+// 时钟
 var time1=1;
 function time(){
 var now = new Date();
@@ -64,62 +65,62 @@ function yue(){
  if(y1==2){
 document.cookie="y=2";
 document.getElementById("szblack").disabled = false;
-var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "#565656";
- var ssa = document.getElementById('ssa');ssa.style.transition = "1s"; ssa.style.background = "#565656";
+var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.background = "#565656";
+ var ssa = document.getElementById('ssa');ssa.style.transition = "0s"; ssa.style.background = "#565656";
 
-  var sz = document.getElementById('sz');sz.style.transition = "1s"; sz.style.background = "#565656";
+  var sz = document.getElementById('sz');sz.style.transition = "0s"; sz.style.background = "#565656";
 
    
    
- var A = document.getElementById('divB');A.style.transition = "1s"; A.style.background = "#565656";
-  var F = document.getElementById('divF');F.style.transition = "1s"; F.style.background = "#565656";
- var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.background = "#565656";
- var B = document.getElementById('divC');B.style.transition = "1s"; B.style.background = "#565656";
- var CF = document.getElementById('CF');CF.style.transition = "1s"; CF.style.background = "#565656";
+ var A = document.getElementById('divB');A.style.transition = "0s"; A.style.background = "#565656";
+  var F = document.getElementById('divF');F.style.transition = "0s"; F.style.background = "#565656";
+ var IED = document.getElementById('IED');IED.style.transition = "0s"; IED.style.background = "#565656";
+ var B = document.getElementById('divC');B.style.transition = "0s"; B.style.background = "#565656";
+ var CF = document.getElementById('CF');CF.style.transition = "0s"; CF.style.background = "#565656";
 
-  var D = document.getElementById('divE');D.style.transition = "1s"; D.style.background = "#565656";
- var DD = document.getElementById('DD');DD.style.transition = "1s"; DD.style.background = "#565656";
-  var EF = document.getElementById('EF');EF.style.transition = "1s"; EF.style.background = "#565656";
-   var G = document.getElementById('divG');G.style.transition = "1s"; G.style.background = "#565656";
-  var GF = document.getElementById('GF');GF.style.transition = "1s"; GF.style.background = "#565656";
-  var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "1s"; blackdiv.style.background = "black";
-  var FF = document.getElementById('FF');FF.style.transition = "1s"; FF.style.background = "#565656";
+  var D = document.getElementById('divE');D.style.transition = "0s"; D.style.background = "#565656";
+ var DD = document.getElementById('DD');DD.style.transition = "0s"; DD.style.background = "#565656";
+  var EF = document.getElementById('EF');EF.style.transition = "0s"; EF.style.background = "#565656";
+   var G = document.getElementById('divG');G.style.transition = "0s"; G.style.background = "#565656";
+  var GF = document.getElementById('GF');GF.style.transition = "0s"; GF.style.background = "#565656";
+  var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.background = "black";
+  var FF = document.getElementById('FF');FF.style.transition = "0s"; FF.style.background = "#565656";
  var yuea=document.getElementById("yuea");
 
   yuea.setAttribute("src","yan.svg");
   if (screen.width > 640) { 
     document.body.style.transition = "1s";document.body.style.backgroundImage = "url(bj2b.jpg)";
-    var dq = document.getElementById('dq');dq.style.transition = "1s"; dq.style.background = "#565656";
+    var dq = document.getElementById('dq');dq.style.transition = "0s"; dq.style.background = "#565656";
    } 
  }
  if(y1==1){
-var ssb = document.getElementById('ssb');ssb.style.transition = "1s"; ssb.style.background = "white";
-var ssa = document.getElementById('ssa');ssa.style.transition = "1s"; ssa.style.background = "white";
+var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.background = "white";
+var ssa = document.getElementById('ssa');ssa.style.transition = "0s"; ssa.style.background = "white";
  document.cookie="y=1";
 document.getElementById("szblack").disabled = true;
     
-   var FF = document.getElementById('FF');FF.style.transition = "1s"; FF.style.background = "white";
-     var F = document.getElementById('divF');F.style.transition = "1s"; F.style.background = "white";
+   var FF = document.getElementById('FF');FF.style.transition = "0s"; FF.style.background = "white";
+     var F = document.getElementById('divF');F.style.transition = "0s"; F.style.background = "white";
 
- var A = document.getElementById('divB');A.style.transition = "1s"; A.style.background = "white";
- var sz = document.getElementById('sz');sz.style.transition = "1s"; sz.style.background = "white";
-var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.background = "white";
-  var B = document.getElementById('divC');B.style.transition = "1s"; B.style.background = "white";
+ var A = document.getElementById('divB');A.style.transition = "0s"; A.style.background = "white";
+ var sz = document.getElementById('sz');sz.style.transition = "0s"; sz.style.background = "white";
+var IED = document.getElementById('IED');IED.style.transition = "0s"; IED.style.background = "white";
+  var B = document.getElementById('divC');B.style.transition = "0s"; B.style.background = "white";
 
-    var D = document.getElementById('divE');D.style.transition = "1s"; D.style.background = "white";
- var DD = document.getElementById('DD');DD.style.transition = "1s"; DD.style.background = "white";
-  var CF = document.getElementById('CF');CF.style.transition = "1s"; CF.style.background = "white";
-    var EF = document.getElementById('EF');EF.style.transition = "1s"; EF.style.background = "white";
-     var G = document.getElementById('divG');G.style.transition = "1s"; G.style.background = "white";
-  var GF = document.getElementById('GF');GF.style.transition = "1s"; GF.style.background = "white";
-  var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "1s"; blackdiv.style.background = "none";
+    var D = document.getElementById('divE');D.style.transition = "0s"; D.style.background = "white";
+ var DD = document.getElementById('DD');DD.style.transition = "0s"; DD.style.background = "white";
+  var CF = document.getElementById('CF');CF.style.transition = "0s"; CF.style.background = "white";
+    var EF = document.getElementById('EF');EF.style.transition = "0s"; EF.style.background = "white";
+     var G = document.getElementById('divG');G.style.transition = "0s"; G.style.background = "white";
+  var GF = document.getElementById('GF');GF.style.transition = "0s"; GF.style.background = "white";
+  var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.background = "none";
   
   var yuea=document.getElementById("yuea");
 
   yuea.setAttribute("src","yue.svg");
     if (screen.width > 640) { 
     document.body.style.transition = "1s";document.body.style.backgroundImage = "url(bj2.jpg)";
-    var dq = document.getElementById('dq');dq.style.transition = "1s"; dq.style.background = "white";
+    var dq = document.getElementById('dq');dq.style.transition = "0s"; dq.style.background = "white";
    } 
  }
 }
@@ -163,6 +164,7 @@ localStorage.setItem("go",0);
 localStorage.setItem("top",0);
 localStorage.removeItem("time");
 document.getElementById("szblack").disabled = true;
+var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.opacity = localStorage.black;
 if(y=="y=1"){
 y1=2;
 yue();
@@ -440,10 +442,14 @@ document.body.style.overflow = 'auto';
  }
  }
  function szblack(){
+ // 亮度的设置
  var szblack = document.getElementById("szblack").value;
  szblack=szblack/110;
+ // 设置亮度的值为输入的值的110分之1
  var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.opacity = szblack;
-
+ // 设置亮度
+localStorage.setItem("black",szblack);
+// 用html5应用缓存 缓存亮度
  }
   function szb(){
  sb=sb+1;

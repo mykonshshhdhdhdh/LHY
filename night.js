@@ -1,12 +1,14 @@
 var n=0;
 
-if(document.body.style.background=="#565656"){
+var y = document.cookie; 
+if(y=="y=2"){
 yuea.setAttribute("src","yan.svg");
+n=1;
 
 
 }else{
 yuea.setAttribute("src","yue.svg");
-
+n=2
 }
 function night(){
 n=n+1;

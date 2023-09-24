@@ -41,12 +41,12 @@ font-size:1em;
 margin-top:2em;
 }
 #ts {
-width:60vw;
-height:17vh;
+width:100vw;
+height:40px;
 background:#ffdd71;
 position:fixed;
-	top:0px;
-	left:20vw;
+top:0px;
+	left:0vw;
 z-index: 50000;
 font-size:1em;
 Overflow:auto;
@@ -54,10 +54,12 @@ Overflow:auto;
 #tsc {
 position:absolute;
 	right:3%;
+	font-size:2vw;
 }
 #tsb {
 position:absolute;
 	left:0px;
+	font-size:2vw;
 }
 .dzja {
 width:155px;
@@ -183,7 +185,17 @@ position:absolute;
 	z-index: 39001;
 	font-size:2vw;
 }
+#wl_a {
+}
 
+
+#book_a {
+display:none; 
+}
+#book_b {
+display:none;
+
+}
 #IEa {
 width:80%;
 color:black;

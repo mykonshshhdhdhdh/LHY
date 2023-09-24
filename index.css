@@ -170,6 +170,7 @@ position:absolute;
 	top:0%;
 	left:0%;
 	width:23vw;
+
 	border-radius:300px;
 	z-index: 39001;
 }
@@ -192,14 +193,58 @@ position:absolute;
 color:white;
 z-index: 39001;
 }
-#busuanzi_container_site_uv {
+#wl_a {
+flex:1;
+display:inline;
 position:relative;
 	top:13%;
-	left:3%;
+	left:0%;
+}
+#busuanzi_container_site_uv {
+
 	color:#FF88B9;
 	z-index: 39001;
 }
+#busuanzi_container_site_uv_a {
+display:flex; 
 
+flex-direction:column;
+align-items:center;
+float:left;
+width:33%;
+height:7%;
+border-right-style:solid;
+border-right-width:2px;
+border-right-color:#FF88B9;
+}
+#book_a {
+display:flex; 
+flex-direction:column;
+align-items:center;
+width:33%;
+border-right-style:solid;
+height:7%;
+Overflow:hidden;
+border-width:2px;
+border-color:#FF88B9;
+}
+#book_a p {
+margin-top:-1%;
+}
+#book_b {
+float:right;
+display:flex; 
+flex-direction:column;
+align-items:center;
+width:33%;
+
+height:7%;
+Overflow:hidden;
+margin-top:-20%;
+}
+#book_b p {
+margin-top:-1%;
+}
 #IEa {
 width:80%;
 color:black;
@@ -344,7 +389,8 @@ width:105%;
 position:absolute;
 top: -2px;
 left: -2px;
-border-radius:300px;
+border-radius:300vw;
+
 }
 .butw {
 width:25%;

@@ -88,8 +88,10 @@ document.body.style.background= "white";
 <script>
 function mybq(){
 if(history.length==1){
+localStorage.setItem("go",localStorage.top);
 window.location.assign("index.html")
 }else{
+localStorage.setItem("go",localStorage.top);
 window.history.go(-1)
 }
 }

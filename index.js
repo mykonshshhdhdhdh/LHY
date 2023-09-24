@@ -125,9 +125,10 @@ var IED = document.getElementById('IED');IED.style.transition = "0s"; IED.style.
  }
 }
 function ks(){
-bmusic.pause()
-var musicname=localStorage.music
-bmusic=document.querySelector('.bmusic')
+
+bmusic.pause();
+var musicname=localStorage.music;
+bmusic=document.querySelector('.bmusic');
 amusic= document.querySelector('.amusic');
 switch(musicname)
 {
@@ -157,14 +158,15 @@ switch(musicname)
 
 
 bmusic.currentTime=localStorage.time;
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 document.documentElement.scrollTop = localStorage.go;
 localStorage.setItem("go",0);
 localStorage.setItem("top",0);
 localStorage.removeItem("time");
 document.getElementById("szblack").disabled = true;
 var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.opacity = localStorage.black;
+document.getElementById("szblack").value=localStorage.black*110;
 if(y=="y=1"){
 y1=2;
 yue();
@@ -225,65 +227,62 @@ function wx(){
 var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.style.transform = "rotate(-0deg)";
  }
  }
- function yx(){
-window.location.assign("n.html")
-var audio=document.getElementById("audio");
-}
+
 
     
     
     
-    bmusic=document.querySelector('.bmusic')
-amusic= document.querySelector('.amusic')
+    bmusic=document.querySelector('.bmusic');
+amusic= document.querySelector('.amusic');
 
 function AA(){
-	bmusic.pause()
-	amusic.src="rionos - ウィアートル (旅人).mp3"
+	bmusic.pause();
+	amusic.src="rionos - ウィアートル (旅人).mp3";
 	localStorage.setItem("music",1);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AB(){
-	bmusic.pause()
-	amusic.src="ZAQ - Sparkling Daydream.mp3"
+	bmusic.pause();
+	amusic.src="ZAQ - Sparkling Daydream.mp3";
 	localStorage.setItem("music",2);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AC(){
-	bmusic.pause()
-	amusic.src="鈴木雅之、伊原六花 - ラブ・ドラマティック (Love Dramatic).mp3"
+	bmusic.pause();
+	amusic.src="鈴木雅之、伊原六花 - ラブ・ドラマティック (Love Dramatic).mp3";
 	localStorage.setItem("music",3);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AD(){
-	bmusic.pause()
-	amusic.src="昆夏美 - 虹のかけら.mp3"
+	bmusic.pause();
+	amusic.src="昆夏美 - 虹のかけら.mp3";
 	localStorage.setItem("music",4);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AE(){
-	bmusic.pause()
-	amusic.src="平野绫、加藤英美里、福原香織、远藤綾 - もってけ！セーラーふく (拿去吧！水手服).mp3"
+	bmusic.pause();
+	amusic.src="平野绫、加藤英美里、福原香織、远藤綾 - もってけ！セーラーふく (拿去吧！水手服).mp3";
 	localStorage.setItem("music",5);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AF(){
-	bmusic.pause()
-	amusic.src="放課後ティータイム - ふわふわ時間 (轻飘飘时间) (轻飘飘时间) (Single Version).mp3"
+	bmusic.pause();
+	amusic.src="放課後ティータイム - ふわふわ時間 (轻飘飘时间) (轻飘飘时间) (Single Version).mp3";
 	localStorage.setItem("music",6);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 function AG(){
-	bmusic.pause()
-	amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3"
+	bmusic.pause();
+	amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3";
 	localStorage.setItem("music",7);
-	bmusic.load()
-    bmusic.play()
+	bmusic.load();
+    bmusic.play();
 }
 window.onscroll = function() {scrollFunction()};
  
@@ -351,19 +350,34 @@ var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.st
  }
  }
  function divB(){
+ // 打开文章1
  localStorage.setItem("top", document.documentElement.scrollTop);
  
- bmusic=document.querySelector('.bmusic')
+ bmusic=document.querySelector('.bmusic');
+ bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("1.html")
  }
+  function yx(){
+  // 打开意见反馈
+   localStorage.setItem("top", document.documentElement.scrollTop);
+ 
+ bmusic=document.querySelector('.bmusic');
+ bmusic.pause();
+ localStorage.setItem("time",bmusic.currentTime);
+window.location.assign("n.html")
+var audio=document.getElementById("audio");
+}
   function bq(){
  var bqq = document.getElementById('bqq');bqq.style.transition = "1s"; bqq.style.marginLeft = "-100vw";
 document.body.style.overflow = 'auto';
  }
 function divC(){
+// 打开文章2
 localStorage.setItem("top", document.documentElement.scrollTop);
-bmusic=document.querySelector('.bmusic')
+bmusic=document.querySelector('.bmusic');
+
+bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
 window.location.assign("2.html")
  }
@@ -372,8 +386,10 @@ window.location.assign("2.html")
 document.body.style.overflow = 'auto';
  }
  function divE(){
+ // 打开文章3
  localStorage.setItem("top", document.documentElement.scrollTop);
- bmusic=document.querySelector('.bmusic')
+ bmusic=document.querySelector('.bmusic');
+ bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("3.html")
  }
@@ -382,8 +398,10 @@ document.body.style.overflow = 'auto';
 document.body.style.overflow = 'auto';
  }
   function divF(){
+  // 打开文章5
   localStorage.setItem("top", document.documentElement.scrollTop);
-  bmusic=document.querySelector('.bmusic')
+  bmusic=document.querySelector('.bmusic');
+  bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
 window.location.assign("5.html")
  }
@@ -392,8 +410,10 @@ window.location.assign("5.html")
 document.body.style.overflow = 'auto';
  }
  function divD(){
+ // 打开文章4
  localStorage.setItem("top", document.documentElement.scrollTop);
- bmusic=document.querySelector('.bmusic')
+ bmusic=document.querySelector('.bmusic');
+ bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("4.html")
  }
@@ -402,18 +422,24 @@ document.body.style.overflow = 'auto';
 document.body.style.overflow = 'auto';
  }
  function lia(){
- bmusic=document.querySelector('.bmusic')
+ // 打开更多
+ bmusic=document.querySelector('.bmusic');
+ bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("f.html")
  }
   function limy(){
-  bmusic=document.querySelector('.bmusic')
+  // 打开自我介绍
+  bmusic=document.querySelector('.bmusic');
+  bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("my.html")
 
  }
    function libook(){
-   bmusic=document.querySelector('.bmusic')
+   // 打开备忘录
+   bmusic=document.querySelector('.bmusic');
+   bmusic.pause();
  localStorage.setItem("time",bmusic.currentTime);
  window.location.assign("book.html")
  }

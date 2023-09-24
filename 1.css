@@ -6,7 +6,7 @@ position:fixed;
 	width:10vw;
 	height:10vw;
 	border-style:none;
-    z-index: 999999991;
+    z-index: 11;
     outline: none;
 }
 .yuea {
@@ -15,7 +15,7 @@ position:fixed;
 	left:1vw;
 	width:10vw;
 	height:10vw;
-    z-index: 999999991;
+    z-index: 11;
 }
 .BA {
 width:100%;
@@ -70,7 +70,8 @@ position:fixed;
 width:100vw;
 height:100vh;
 font-size:10vw;
-border-style:none;background-color:transparent;
+border-style:none;
+background-color:transparent;
 	z-index:20002;
 }
 .black {
@@ -115,5 +116,5 @@ position:fixed;
 top:0px;
 border-style:none;
 background-color:transparent;
-z-index: 202;
+z-index: 12;
 }

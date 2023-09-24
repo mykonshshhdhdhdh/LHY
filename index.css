@@ -1261,4 +1261,11 @@ color:#FF88B9;
   /* 每一行设置底部边框*/
   border-bottom: 1px solid #FF88B9;
 }
+#ssb a {
+
+text-decoration:none;
+color:#FF88B9;
+  /* 每一行设置底部边框*/
+  
+}
  

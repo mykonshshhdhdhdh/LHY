@@ -6,7 +6,7 @@ position:fixed;
 	width:5vw;
 	height:5vw;
 	border-style:none;
-    z-index: 999999991;
+    z-index: 91;
     outline: none;
 }
 .yuea {
@@ -15,7 +15,7 @@ position:fixed;
 	left:0vw;
 	width:5vw;
 	height:5vw;
-    z-index: 999999991;
+    z-index: 91;
 }
 .BA {
 width:100%;
@@ -117,5 +117,5 @@ position:fixed;
 top:0px;
 border-style:none;
 background-color:transparent;
-z-index: 202;
+z-index: 100002;
 }

@@ -13,6 +13,10 @@
 <link rel= "shortcut icon" href ="logo.png" type="image/x-icon" />
 
 <style>
+input::-webkit-input-placeholder{
+color:#FF88B9;
+
+}
 </style>
 <script>
 
@@ -161,6 +165,7 @@ var ts = document.getElementById('ts');ts.style.display= "none";
 </div>
 
 <div class="dq" id="dq">
+<div id="background"></div>
 <div class="divA">
 <div class="APPA">
 <div class="APA">
@@ -272,7 +277,7 @@ audio.play();
 
 <div id="ss-div">
 <button onclick="ssno()" id="ss-no"><div id="ss-no-c"><div id="ss-no-a"></div><div id="ss-no-b"></div></div></button>
-<input type="text" id="ssa" onkeyup="ss()" placeholder="搜索..">
+<input type="text" id="ssa" onkeyup="ss()" placeholder="请搜索...">
  
 <table id="ssb" >
   <tr class="header">

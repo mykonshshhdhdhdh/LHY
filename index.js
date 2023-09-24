@@ -126,9 +126,10 @@ var IED = document.getElementById('IED');IED.style.transition = "0s"; IED.style.
 }
 function ks(){
 
-bmusic.pause();
+
 var musicname=localStorage.music;
 bmusic=document.querySelector('.bmusic');
+bmusic.pause();
 amusic= document.querySelector('.amusic');
 switch(musicname)
 {

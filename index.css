@@ -259,6 +259,7 @@ border-top-style:solid;
  border-top-color:#FF88B9;
 }
 #IEa button {
+margin-top:3%;
 width:100%;
 text-decoration:none;
 color:#FF88B9;
@@ -267,24 +268,29 @@ text-align-last: left;
 border-style:none;
 background-color:transparent;
 outline: none;
+margin-bottom:2%;
 }
 #IEa p {
+margin-bottom:3%;
+margin-left:2.5%;
+margin-top:-0.2%;
 width:100%;
 text-decoration:none;
 color:#FF88B9;
 font-size:5vw;
 text-align-last: left;
-
+font-size:6vw;
 }
 #IEa button:hover {
 	animation:IEa 0.5s infinite;
 	animation-iteration-count:1;
-	font-size:7vw;
+	font-size:6.2vw;
+	color:#ffafd0;
 }
 @keyframes IEa
     {
     from {font-size:6vw}
-    to {font-size:7vw}
+    to {font-size:6.2vw}
     }
 
  
@@ -309,6 +315,7 @@ z-index: 40000;
 }
 #sz p {
 color:#FF88B9;
+
 }
 #szno {
 width:30vw;

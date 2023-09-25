@@ -525,8 +525,16 @@ var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.tr
  document.body.style.overflow = 'hidden';
  }
 
-
-
+function ssclean(){
+var clean=confirm("确定要清理缓存！！！！\n清理后不能恢复！！！！\n清理范围包括备忘录内容");
+if (clean ==true)
+{
+localStorage.clear();
+setTimeout(function(){
+alert("清理成功！");
+},2000);
+}
+}
 var ssn=1;
 function ssno(){
 ssn=ssn+1;

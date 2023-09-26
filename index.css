@@ -149,11 +149,12 @@ position:fixed;
 	top:0vh;
 	left:-85%;
 	/*这里是暂时的↑要改成-85%*/
+	
 width:70%;
 height:100vh;
 background:white;
 z-index: 39000;
-
+Overflow:auto;
 filter: drop-shadow(0px 2px 10px  #aab5bc);
 }
 .IEDA {
@@ -164,6 +165,7 @@ position:absolute;
 	top:0%;
 	left:0%;
 z-index: 39000;
+
 	}
 #IETXA {
 position:absolute;
@@ -301,6 +303,7 @@ position:fixed;
 width:100vw;
 height:100vh;
 z-index: 40000;
+Overflow:auto;
 }
 #sz div {
 width:100vw;

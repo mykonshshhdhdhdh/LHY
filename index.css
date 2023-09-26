@@ -2,7 +2,7 @@ body {
 display:flex; 
 flex-direction:column;
 align-items:center;
-background:#636363;
+background:white;
 background-image:url('bj.jpg');
 background-attachment:fixed;
 background-position: center top;

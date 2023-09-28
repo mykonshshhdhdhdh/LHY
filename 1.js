@@ -5,7 +5,7 @@ if(y=="y=2")
 
   var BC = document.getElementById('BC');BC.style.transition = "0s"; BC.style.color = "white";
   var BB = document.getElementById('BB');BB.style.transition = "0s"; BB.style.color = "white";
-  var BE = document.getElementById('BE');BE.style.transition = "0s"; BE.style.color = "white
+  var BE = document.getElementById('BE');BE.style.transition = "0s"; BE.style.color = "white";
 }
 if(y=="y=1")
 {
@@ -24,7 +24,7 @@ n=1;
 
 }else{
 yuea.setAttribute("src","yue.svg");
-n=2
+n=2;
 }
 function night(){
 n=n+1;

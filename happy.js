@@ -1,10 +1,20 @@
 var d = new Date();
 var x = d.getUTCDate();
 var y = d.getMonth();
+var r = d.getFullYear() - 2023;
 // 0=1月，1=2月
-
+// x是日期，y是月份
 if(x==18&&y==8){
 document.getElementById("tsb").innerHTML="✎...祝站长生日快乐！！！";
+}
+if(x==1&&y==9){
+document.getElementById("tsb").innerHTML="✎...国庆节快乐！！！";
+}
+if(x==17&&y==7){
+document.getElementById("tsb").innerHTML="✎...今天是建站第"+r+"周年！！！";
+
+
+
 }
 if(x==14&&y==9){
 document.getElementById("tsb").innerHTML="✎...祝五月七日茴香学姐生日快乐！！！";

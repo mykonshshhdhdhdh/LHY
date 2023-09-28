@@ -27,6 +27,8 @@ function time(){
 var now = new Date();
 var time = now.getMinutes();
 var timeh = now.getHours();
+var timeyear = now.getFullYear()-2023;
+document.getElementById("book_a_p").innerHTML=timeyear;
 if(time1==1){
 document.getElementById("time-small").innerHTML="" ;
 if(timeh < 10){

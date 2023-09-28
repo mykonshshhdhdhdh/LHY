@@ -19,30 +19,23 @@
 <body id="body">
 <script>
 
-var y = document.cookie; 
-if(y=="y=2")
-{
- document.body.style.background= "#565656";
-}
-if(y=="y=1")
-{
-document.body.style.background= "white";
-}
+
 </script>
 
 
 <button class="yue" id="yue" onclick="night()">
 <img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
 </button>
-<script src="night.js"></script>
+
 <button class="BBA" onclick="blackA()">
 <img src="1.png" alt="图片" class="BA" loading="lazy"></img>
 </button>
 <p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月15日</small></p>
-<p class="BE">标签:</p>
+<p class="BE" id="BE">标签:</p>
 <p class="BD">·动漫</p>
-<p class="BB"><b>推荐一部番剧</b></p>
-<p class="BC" >《一周的朋友》如其名，就是每周都会重置与朋友的记忆的女主藤宫香织与男主长谷交朋友的故事。长谷在被香织忘了无数次，好不容易培养的感情被遗忘的情况下，仍坚持着，数次说出“请再次与我交朋友吧”香织也在长谷的帮助下渐渐能记起感情。这是一部纯爱番，不过最后两人没有交往，仍是朋友相称，不过感情早以比朋友更高一层了。长谷有一全程助攻的好基友桐生，香织也交到了一位有健忘症的女生沙希。沙希是桐生小学的同班同学，这两人之间很甜的。</p>
+<p class="BB" id="BB"><b>推荐一部番剧</b></p>
+<p class="BC" id="BC">《一周的朋友》如其名，就是每周都会重置与朋友的记忆的女主藤宫香织与男主长谷交朋友的故事。长谷在被香织忘了无数次，好不容易培养的感情被遗忘的情况下，仍坚持着，数次说出“请再次与我交朋友吧”香织也在长谷的帮助下渐渐能记起感情。这是一部纯爱番，不过最后两人没有交往，仍是朋友相称，不过感情早以比朋友更高一层了。长谷有一全程助攻的好基友桐生，香织也交到了一位有健忘症的女生沙希。沙希是桐生小学的同班同学，这两人之间很甜的。
+</p>
 <br>
 <br>
 <br>
@@ -76,86 +69,9 @@ gitalk.render('gitalk-container')
 
 <script>
 
-window.onscroll = function() {scrollFunction()};
- 
-function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
-        
-                
-        
-    } 
-    
-    else {
-      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
-    }
-}
-function non() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-function none(){
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
-document.body.style.overflow = 'auto';
-if (screen.width < 640) {
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
- ha=1;}
-}
-function blackA(){
-document.body.style.overflow = 'hidden';
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "inline";
-}
-function fh(){
-window.history.back();
 
-}
-var ha=1;
-function h(event){
-if (screen.width < 640) {
-ha=ha+1;
-if(ha==3){
-ha=1;
-}
-if(ha==2){
-
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "150vw";
-var e = event || window.event;
-var x = e.screenX;
-var y = document.body.scrollWidth/3;  
-var ya=y+y;
-var yb=ya+y;
-if(x < y && x>0){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-}
-if(x > y && x < ya ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-20vw";
-}
-if(x > ya && x < yb ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-50vw";
-}
-
-}
-if(ha==1){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-
-}
-}
-}
-function mybq(){
-
-if(history.length==1){
-localStorage.setItem("go",localStorage.top);
-window.location.assign("index.html")
-}else{
-localStorage.setItem("go",localStorage.top);
-window.history.go(-1)
-}
-
-}
 
 </script>
-
+<script src="1.js"></script>
 
 </body>

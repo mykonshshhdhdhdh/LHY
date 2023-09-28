@@ -15,26 +15,21 @@
 </style>
 
 <body id="body">
+<button class="yue" id="yue" onclick="night()">
+<img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
+</button>
 <script>
 
-var y = document.cookie; 
-if(y=="y=2")
-{
- document.body.style.background= "#565656";
-}
-if(y=="y=1")
-{
-document.body.style.background= "white";
-}
+ 
 </script>
 <button class="BBA" onclick="blackA()">
 <img src="5.png" alt="图片" class="BA" loading="lazy"></img>
 </button>
 <p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月23日12:03</small></p>
-<p class="BE">标签:</p>
+<p class="BE" id="BE">标签:</p>
 <p class="BD">·动漫</p>
-<p class="BB"><b>四谎读后感</b></p>
-<p class="BC">悲剧是创造一个美好的东西，然后毁掉他。四谎毫不疑问是一部悲剧。在主人公公生因某些原因放弃钢琴的时候，遇到了改变他一生的人——宫园薰。宫园薰用剩下的时光改变了公生，让公生走出黑暗，自己却踏向天堂。小时候的公生太优秀，甚至影响了一些人，其中包括宫园薰，在宫园薰听到公生的演奏时，就决定放弃钢琴改学小提琴，梦想要和公生合奏。在四月，宫园薰编造了一个喜欢渡的谎言，公生作为路人A，在宫园薰的邀请下弹起了所放弃的钢琴，与宫园薰合奏，这也实现了宫园薰的梦想。公生共两次放弃钢琴，分别是妈妈死后和宫园薰进重症监护室的时候。最后在宫园薰的鼓励下，参加了比赛，比赛中，公生仿佛和宫园薰一同合奏，可最后宫园薰也化成光点亮了星空，点亮了公生的人生。最后，也如宫园薰所道，她住进了公生的心，也住进了屏幕前观众的心。台上，黑白琴键仍在跳动。</p>
+<p class="BB" id="BB"><b>四谎读后感</b></p>
+<p class="BC" id="BC">悲剧是创造一个美好的东西，然后毁掉他。四谎毫不疑问是一部悲剧。在主人公公生因某些原因放弃钢琴的时候，遇到了改变他一生的人——宫园薰。宫园薰用剩下的时光改变了公生，让公生走出黑暗，自己却踏向天堂。小时候的公生太优秀，甚至影响了一些人，其中包括宫园薰，在宫园薰听到公生的演奏时，就决定放弃钢琴改学小提琴，梦想要和公生合奏。在四月，宫园薰编造了一个喜欢渡的谎言，公生作为路人A，在宫园薰的邀请下弹起了所放弃的钢琴，与宫园薰合奏，这也实现了宫园薰的梦想。公生共两次放弃钢琴，分别是妈妈死后和宫园薰进重症监护室的时候。最后在宫园薰的鼓励下，参加了比赛，比赛中，公生仿佛和宫园薰一同合奏，可最后宫园薰也化成光点亮了星空，点亮了公生的人生。最后，也如宫园薰所道，她住进了公生的心，也住进了屏幕前观众的心。台上，黑白琴键仍在跳动。</p>
 <br>
 <br>
 <br>
@@ -65,82 +60,9 @@ gitalk.render('gitalk-container')
 </div> 
 <script>
 
-window.onscroll = function() {scrollFunction()};
  
-function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
-        
-                
-        
-    } 
-    
-    else {
-      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
-    }
-}
-function non() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-function none(){
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
-document.body.style.overflow = 'auto';
-if (screen.width < 640) {
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
- ha=1;
- }
-}
-function blackA(){
-document.body.style.overflow = 'hidden';
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "inline";
-}
-function fh(){
-window.history.back();
-}
-var ha=1;
-function h(event){
-if (screen.width < 640) {
-ha=ha+1;
-if(ha==3){
-ha=1;
-}
-if(ha==2){
 
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "150vw";
-var e = event || window.event;
-var x = e.screenX;
-var y = document.body.scrollWidth/3;  
-var ya=y+y;
-var yb=ya+y;
-if(x < y && x>0){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-}
-if(x > y && x < ya ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-20vw";
-}
-if(x > ya && x < yb ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-50vw";
-}
-}
-if(ha==1){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-}
-}
-}
-function mybq(){
-if(history.length==1){
-localStorage.setItem("go",localStorage.top);
-window.location.assign("index.html")
-}else{
-localStorage.setItem("go",localStorage.top);
-window.history.go(-1)
-}
-
-}
 </script>
-
+<script src="1.js"></script>
 
 </body>

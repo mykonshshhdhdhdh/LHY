@@ -15,27 +15,22 @@
 </style>
 
 <body id="body">
+<button class="yue" id="yue" onclick="night()">
+<img src="yue.svg"alt="黑页模式" id="yuea" class="yuea">
+</button>
 <script>
 
-var y = document.cookie; 
-if(y=="y=2")
-{
- document.body.style.background= "#565656";
-}
-if(y=="y=1")
-{
-document.body.style.background= "white";
-}
+ 
 </script>
 
 <button class="BBA" onclick="blackA()">
 <img src="3.png" alt="图片" class="BA" loading="lazy"></img>
 </button>
 <p class="YC"><small>发布于：广东&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2023年8月17日</small></p>
-<p class="BE">标签:</p>
+<p class="BE" id="BE">标签:</p>
 <p class="BD">·生活</p>
-<p class="BB"><b>用英语读图片的内容</b></p>
-<p class="BC">是不是第一反应是日语呢23333
+<p class="BB" id="BB"><b>用英语读图片的内容</b></p>
+<p class="BC" id="BC">是不是第一反应是日语呢23333
 看到前辈的一瞬间就想到“仙贝～”，是不是呢，( ^３^ )╱“大丈古”，那你看到喜欢的第一反应是“带司ki”还是“阿姨洗铁路”呢，话说这样子的话，那这确实是樱语啊ヾ(✿ﾟ▽ﾟ)ノ
 <br>灵感来源: <a href="https://m.bilibili.com/video/BV19h4y1Q7XQ?buvid=XUE05CBED92023D1C0DFCD3130F5611C06EEC&is_story_h5=false&mid=6IlzIxashpADnoHrXa79OQ%3D%3D&p=1&plat_id=116&share_from=ugc&share_medium=android_b&share_plat=android&share_session_id=34785b2b-331a-4b1b-b959-c3c6833a08f0&share_source=GENERIC&share_tag=s_i&timestamp=1692268293&unique_k=VZKFdtO&up_id=338214524&share_times=1">哔哩哔哩</a></p>
 <br>
@@ -68,82 +63,10 @@ gitalk.render('gitalk-container')
 </div> 
 <script>
 
-window.onscroll = function() {scrollFunction()};
  
-function scrollFunction() {console.log(121);
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
-        
-                
-        
-    } 
-    
-    else {
-      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
-    }
-}
-function non() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-function none(){
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
-document.body.style.overflow = 'auto';
-if (screen.width < 640) {
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
- ha=1;
- }
-}
-function blackA(){
-document.body.style.overflow = 'hidden';
-var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "inline";
-}
-function fh(){
-window.history.back();
-}
-var ha=1;
-function h(event){
-if (screen.width < 640) {
-ha=ha+1;
-if(ha==3){
-ha=1;
-}
-if(ha==2){
 
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "120vw";
-var e = event || window.event;
-var x = e.screenX;
-var y = document.body.scrollWidth/3;  
-var ya=y+y;
-var yb=ya+y;
-if(x < y && x>0){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-}
-if(x > y && x < ya ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-20vw";
-}
-if(x > ya && x < yb ){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "-50vw";
-}
-}
-if(ha==1){
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.width = "100vw";
-var blackA = document.getElementById('blackA');blackA.style.transition = "0.5s"; blackA.style.marginLeft = "0vw";
-}
-}
-}
-function mybq(){
-if(history.length==1){
-localStorage.setItem("go",localStorage.top);
-window.location.assign("index.html")
-}else{
-localStorage.setItem("go",localStorage.top);
-window.history.go(-1)
-}
 
-}
 </script>
-
+<script src="1.js"></script>
 
 </body>

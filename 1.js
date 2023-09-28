@@ -55,21 +55,38 @@ document.cookie="y=1";
 window.onscroll = function() {scrollFunction()};
  
 function scrollFunction() {console.log(121);
+        
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
-        
+
                 
         
     } 
     
     else {
-      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
+      var no = document.getElementById('no');no.style.transition = "0.3s"; no.style.opacity = "0";
+      
     }
 }
 function non() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+
+   var ssn= setInterval(function(){ 
+   if(document.documentElement.scrollTop>20){nntop();
+   }else{
+   clearInterval(ssn);
+   }
+    }, 10);
+ 
+    
+    
 }
+function nntop(){
+
+var nn = document.documentElement.scrollTop;
+    document.body.scrollTop = nn-50 ;
+    document.documentElement.scrollTop = nn-50 ;
+
+    }
 function none(){
 var black = document.getElementById('black');black.style.transition = "0s"; black.style.display = "none";
 document.body.style.overflow = 'auto';

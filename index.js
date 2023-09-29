@@ -364,7 +364,7 @@ var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.m
 var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(-45deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)";
 var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)";
-},100)
+},500)
 
  }
  if(I==1){

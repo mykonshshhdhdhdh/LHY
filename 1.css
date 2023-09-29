@@ -109,9 +109,11 @@ justify-content:center;
 }
 .blackA {
 
-width:100%;
 
-
+width: 100vw;
+height: 100vh; 
+ 
+  object-fit: contain;
 position:fixed;
 	
 	left:0px;

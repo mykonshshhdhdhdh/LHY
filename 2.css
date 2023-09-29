@@ -85,8 +85,24 @@ position:fixed;
 	z-index:20000;
 	display:none;
 }
-.blackA {
+#img {
+width:100vw;
 height:100vh;
+position:fixed;
+	top:0px;
+	left:0px;
+	z-index:20001;
+	display:flex;
+align-items:center;
+justify-content:center;
+}
+.blackA {
+
+width: 100vw;
+height: 100vh; 
+ 
+  object-fit: contain;
+
 position:fixed;
 	top:0vh;
 	left:0%;

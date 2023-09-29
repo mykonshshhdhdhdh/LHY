@@ -346,7 +346,10 @@ document.body.scrollTop = nn-100 ;
     document.documentElement.scrollTop = nn-51 ;
 }
     }
+let lo=null;
 function IE(){
+clearTimeout(lo);
+lo=setTimeout(function(){
    I=I+1;
  if(I==3){
  I=1;
@@ -361,7 +364,7 @@ var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.m
 var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(-45deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)";
 var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)";
-},500)
+},100)
 
  }
  if(I==1){
@@ -375,6 +378,28 @@ var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.m
 var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "10%";
 },500)
  }
+ },500)
+ }
+ function lp(){
+ clearTimeout(lo);
+document.getElementById("tsb").innerHTML="✎...请不要连续点击！！！！";
+var tsb = document.getElementById('tsb');tsb.style.display= "inline";
+var ts = document.getElementById('ts');ts.style.display= "inline";
+ var ts = document.getElementById('ts');ts.style.transition = "1s"; ts.style.height= "8vh";
+ setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
+var tsb = document.getElementById('tsb');tsb.style.display= "none";
+setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.display= "none";
+},200);
+}, 3000);
+function ts(){
+var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
+var tsb = document.getElementById('tsb');tsb.style.display= "none";
+setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.display= "none";
+},200);
+}
  }
     function IETX(){
    Ic=Ic+1;

@@ -353,15 +353,27 @@ function IE(){
  }
  if(I==2){
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "85%";
- var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)translate(35%)";
-var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "0";
-var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)translate(35%)";
+ 
+ var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "-5%";
+var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "35%";
+var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "-5%";
+ setTimeout(function(){
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(-45deg)";
+var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)";
+var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)";
+},500)
+
  }
  if(I==1){
 var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "1";
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(0deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
+var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
+ setTimeout(function(){
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "10%";
+var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "20%";
+var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "10%";
+},500)
  }
  }
     function IETX(){
@@ -545,9 +557,14 @@ document.body.style.overflow = 'auto';
  }
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
  var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
-var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.opacity= "1";
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(0deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
+var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
+ setTimeout(function(){
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "10%";
+var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "20%";
+var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "10%";
+},500)
  document.body.style.overflow = 'hidden';
  }
 

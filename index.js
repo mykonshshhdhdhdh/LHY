@@ -257,6 +257,9 @@ function AA(){
 	localStorage.setItem("music",1);
 	bmusic.load();
     bmusic.play();
+    gce(3);
+    gc(1);
+    
 }
 function AB(){
 	bmusic.pause();
@@ -264,6 +267,7 @@ function AB(){
 	localStorage.setItem("music",2);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AC(){
 	bmusic.pause();
@@ -271,6 +275,7 @@ function AC(){
 	localStorage.setItem("music",3);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AD(){
 	bmusic.pause();
@@ -278,6 +283,7 @@ function AD(){
 	localStorage.setItem("music",4);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AE(){
 	bmusic.pause();
@@ -285,6 +291,7 @@ function AE(){
 	localStorage.setItem("music",5);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AF(){
 	bmusic.pause();
@@ -292,6 +299,7 @@ function AF(){
 	localStorage.setItem("music",6);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AG(){
 	bmusic.pause();
@@ -299,6 +307,7 @@ function AG(){
 	localStorage.setItem("music",7);
 	bmusic.load();
     bmusic.play();
+          document.getElementById("musicp").innerHTML="";
 }
 function AL(){
 	bmusic.pause();
@@ -306,6 +315,8 @@ function AL(){
 	localStorage.setItem("music",8);
 	bmusic.load();
     bmusic.play();
+    gc(3);
+    gce(1);
 }
 window.onscroll = function() {scrollFunction()};
  

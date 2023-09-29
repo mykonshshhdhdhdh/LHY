@@ -104,7 +104,16 @@ window.history.back();
 
 }
 var ha=1;
-function h(event){
+let hu=null;
+function hb(){
+clearTimeout(hu);
+hu=setTimeout(function () {
+none();
+clearTimeout(hu);
+},300);
+}
+function h(){
+clearTimeout(hu);
 if (screen.width < 640) {
 ha=ha+1;
 if(ha==3){

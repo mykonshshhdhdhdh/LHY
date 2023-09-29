@@ -80,6 +80,14 @@ var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.
  var B = document.getElementById('divC');B.style.transition = "0s"; B.style.background = "#565656";
  var CF = document.getElementById('CF');CF.style.transition = "0s"; CF.style.background = "#565656";
 
+
+
+
+
+
+
+    
+    
   var D = document.getElementById('divE');D.style.transition = "0s"; D.style.background = "#565656";
  var DD = document.getElementById('DD');DD.style.transition = "0s"; DD.style.background = "#565656";
   var EF = document.getElementById('EF');EF.style.transition = "0s"; EF.style.background = "#565656";
@@ -87,6 +95,7 @@ var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.
   var GF = document.getElementById('GF');GF.style.transition = "0s"; GF.style.background = "#565656";
   var blackdiv = document.getElementById('black-div');blackdiv.style.transition = "0s"; blackdiv.style.background = "black";
   var FF = document.getElementById('FF');FF.style.transition = "0s"; FF.style.background = "#565656";
+    var dq = document.getElementById('background');dq.style.transition = "0s"; dq.style.background = "#565656";
  var yuea=document.getElementById("yuea");
 
   yuea.setAttribute("src","yan.svg");
@@ -94,6 +103,7 @@ var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.
     document.body.style.transition = "1s";document.body.style.backgroundImage = "url(bj2b.jpg)";
     var dq = document.getElementById('dq');dq.style.transition = "0s"; dq.style.background = "#565656";
    } 
+
  }
  if(y1==1){
 var ssb = document.getElementById('ssb');ssb.style.transition = "0s"; ssb.style.background = "white";
@@ -103,7 +113,7 @@ document.getElementById("szblack").disabled = true;
     
    var FF = document.getElementById('FF');FF.style.transition = "0s"; FF.style.background = "white";
      var F = document.getElementById('divF');F.style.transition = "0s"; F.style.background = "white";
-
+var dq = document.getElementById('background');dq.style.transition = "0s"; dq.style.background = "white";
  var A = document.getElementById('divB');A.style.transition = "0s"; A.style.background = "white";
  var sz = document.getElementById('sz');sz.style.transition = "0s"; sz.style.background = "white";
 var IED = document.getElementById('IED');IED.style.transition = "0s"; IED.style.background = "white";
@@ -155,6 +165,9 @@ switch(musicname)
         break;
     case "7":
     amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3"
+        break;
+        case "8":
+    amusic.src="阿澄佳奈、松来未祐、大坪由佳 - 太陽曰く燃えよカオス (太阳说燃烧吧混沌).mp3"
         break;
         }
 
@@ -224,10 +237,10 @@ function wx(){
  c=1;
  }
  if(c==2){
- var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.style.transform = "rotate(360deg)";
+ var butw = document.getElementById('butw');butw.style.transition = "2s"; butw.style.transform = "rotate(360deg)";
  }
  if(c==1){
-var butw = document.getElementById('butw');butw.style.transition = "4s"; butw.style.transform = "rotate(-0deg)";
+var butw = document.getElementById('butw');butw.style.transition = "2s"; butw.style.transform = "rotate(-0deg)";
  }
  }
 
@@ -287,6 +300,13 @@ function AG(){
 	bmusic.load();
     bmusic.play();
 }
+function AL(){
+	bmusic.pause();
+	amusic.src="阿澄佳奈、松来未祐、大坪由佳 - 太陽曰く燃えよカオス (太阳说燃烧吧混沌).mp3";
+	localStorage.setItem("music",8);
+	bmusic.load();
+    bmusic.play();
+}
 window.onscroll = function() {scrollFunction()};
  
 function scrollFunction() {console.log(121);
@@ -318,9 +338,13 @@ function non() {
 function nntop(){
 
 var nn = document.documentElement.scrollTop;
+if(nn>=2000){
+document.body.scrollTop = nn-100 ;
+    document.documentElement.scrollTop = nn-100 ;
+}else{
     document.body.scrollTop = nn-51 ;
     document.documentElement.scrollTop = nn-51 ;
-
+}
     }
 function IE(){
    I=I+1;
@@ -346,10 +370,10 @@ var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.tr
  Ic=1;
  }
  if(Ic==2){
- var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.style.transform = "rotate(360deg)";
+ var IETX = document.getElementById('IETX');IETX.style.transition = "2s"; IETX.style.transform = "rotate(360deg)";
  }
  if(Ic==1){
-var IETX = document.getElementById('IETX');IETX.style.transition = "4s"; IETX.style.transform = "rotate(-0deg)";
+var IETX = document.getElementById('IETX');IETX.style.transition = "2s"; IETX.style.transform = "rotate(-0deg)";
  }
  }
  function divB(){

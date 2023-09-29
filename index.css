@@ -10,6 +10,9 @@ background-size: cover;
 scroll-behavior: smooth;
 
 }
+* {
+outline: none;
+}
 #black-div {
 pointer-events: none;
 background:none;
@@ -218,7 +221,7 @@ flex: 1;
 height:100%;
 border-right-style:solid;
 border-right-width:2px;
-border-right-color:#FF88B9;
+border-right-color:#ffa2c8;
 }
 #book_a {
 text-align:center;
@@ -227,7 +230,7 @@ border-right-style:solid;
 height:100%;
 Overflow:hidden;
 border-width:2px;
-border-color:#FF88B9;
+border-color:#ffa2c8;
 }
 #book_a p {
 margin-top:-1%;
@@ -621,11 +624,11 @@ z-index: 1;
 
 .divAA {
 background:white;
-overflow:hidden;
+overflow:auto;
 width:100%;
 height:80%;
 }
-.AA {
+.divAA button {
 width:100%;
 height:15%;
 position:relative;
@@ -634,7 +637,7 @@ background:white;
 overflow:scroll;
 border-style:none;
 }
-.AA:hover {
+.divAA button:hover {
 color:white;
 width:100%;
 height:18%;
@@ -644,141 +647,42 @@ border-style:solid;
 	-webkit-transition-duration:1s;
 
 }
+.AL:hover:after {
+content: '是番剧《潜行吧！奈亚子》的op，其音乐让人听了热血沸腾，节奏感强，听了容易上瘾233 ';
+}
+
 .AA:hover:after {
 content: '来自电影《朝花夕誓》的主题曲，纯净的歌声让人陶醉。纯洁的歌声仿佛让人看到玛奇亚对艾瑞尔的爱“你就是我的希比奥尔”';
 }
-.AB {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
-}
-.AB:hover {
-color:white;
-width:100%;
-height:18%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
 
-}
 .AB:hover:after {
 content: '来自动漫《中二病也要谈恋爱》第一季的op，歌曲的旋律让人有一种莫名的上头，这也是让我非常喜欢的一首歌';
 
 }
-.AC {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
-}
-.AC:hover {
-color:white;
-width:100%;
-height:18%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
 
-}
 .AC:hover:after {
 content: '来自动漫《辉夜大小姐想让我告白》第一季的op，这首歌曲疑似是中文歌233，其旋律让人十分上头。';
 
 }
-.AD {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
-}
-.AD:hover {
-color:white;
-width:100%;
-height:18%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
 
-}
 .AD:hover:after {
 content: '来自动漫《一周的朋友》的op，这是一首不像op的op，不过歌词倒是照应剧情了，歌曲有一点悲惨，不过大家放心原番还是挺欢快的';
 
 }
-.AE {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
 
-}
-.AE:hover {
-color:white;
-width:100%;
-height:16%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
-
-}
 .AE:hover:after {
 content: '来自动漫《幸运星》的op，这首歌也是脑残舞的配乐，歌曲十分欢快，歌词有点烫嘴';
 
 }
-.AF {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
-}
-.AF:hover {
-color:white;
-width:100%;
-height:18%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
 
-}
 .AF:hover:after {
 content: '是乐队“放学后茶会”的处女作，这首歌由唯和mio主唱，歌词中的‘ふわふわ時間’和中文‘滑滑蛋’音相似，所以又叫滑滑蛋';
 }
-.AG {
-width:100%;
-height:15%;
-background:white;
-border-style:none;
-overflow:scroll;
-margin-top:-6px;
 
-}
-.AG:hover {
-color:white;
-width:100%;
-height:18%;
-background:#6c6c6c;
-border-style:solid;
--webkit-transition-property:width,height;
-	-webkit-transition-duration:1s;
-
-}
 .AG:hover:after {
 content: '是偶像团“μs”的歌曲，这首歌是真姬作曲作词。';
 }
+
 .APA {
 width: 0;
   height: 0;
@@ -813,6 +717,7 @@ margin-top:150px;
 filter: drop-shadow(0px 2px 10px  #aab5bc);
 z-index: 1;
 overflow :hidden;
+border-radius:7vw;
 }
 .BA {
 width:100%;
@@ -900,6 +805,7 @@ margin-top:80px;
 filter: drop-shadow(0px 2px 10px  #aab5bc);
 z-index: 1;
 overflow :hidden;
+border-radius:7vw;
 }
 .CCA{
 position:absolute;
@@ -1032,6 +938,7 @@ filter: drop-shadow(0px 2px 10px  #aab5bc);
 z-index: 1;
 overflow :hidden;
 text-align-last: left;
+border-radius:7vw;
 }
 .DDA{
 position:absolute;
@@ -1096,6 +1003,7 @@ filter: drop-shadow(0px 2px 10px  #aab5bc);
 z-index: 1;
 overflow :hidden;
 text-align-last: left;
+border-radius:7vw;
 }
 .EEA{
 position:absolute;
@@ -1160,6 +1068,7 @@ filter: drop-shadow(0px 2px 10px  #aab5bc);
 z-index: 1;
 overflow :hidden;
 text-align-last: left;
+border-radius:7vw;
 }
 .FFA{
 position:absolute;

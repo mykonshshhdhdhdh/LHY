@@ -27,7 +27,6 @@ color:#FF88B9;
 </style>
 <script>
 
-
 function is_weixn(){  
     var ua = navigator.userAgent.toLowerCase();  
     if(ua.match(/MicroMessenger/i)=="micromessenger") {  
@@ -272,14 +271,10 @@ var ts = document.getElementById('ts');ts.style.display= "none";
 
  <img border="0" src="音乐.svg" alt="音乐播放器" width="50" >
 <p id="musicp"></p>
-<audio controls class="bmusic" loop="loop" id="audio">
-
+<audio controls class="bmusic" loop="loop" id="audio" autoplay >
   <source src="" type="audio/mpeg" class="amusic">
 </audio>
-<script type="text/javascript">ententsByTagName("audio")[0];tListenerdedction() {tTime = 0;
-audio.play();
-});
-</script>
+
 
 </div>
 <button class="no" id="no" onclick="non()" onselectstart="return false;">&#8743;</button>
@@ -362,7 +357,6 @@ audio.play();
 </footer>
 <script src="8.js"></script>
 <script src="7.js"></script>
-
 <script src="index.js"></script>
 </body>
 </html>

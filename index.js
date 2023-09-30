@@ -141,40 +141,49 @@ function ks(){
 
 var musicname=localStorage.music;
 bmusic=document.querySelector('.bmusic');
-bmusic.pause();
 amusic= document.querySelector('.amusic');
+bmusic.pause();
+bmusic.load();
+
 switch(musicname)
 {
     case "1":
-        amusic.src="rionos - ウィアートル (旅人).mp3"
+        amusic.src="rionos - ウィアートル (旅人).mp3";
+            gc();
     break;
     case "2":
-     amusic.src="ZAQ - Sparkling Daydream.mp3" 
+     amusic.src="ZAQ - Sparkling Daydream.mp3" ;
     break;
     case "3":
-     amusic.src="鈴木雅之、伊原六花 - ラブ・ドラマティック (Love Dramatic).mp3"
+     amusic.src="鈴木雅之、伊原六花 - ラブ・ドラマティック (Love Dramatic).mp3";
         break;
     case "4":
-      amusic.src="昆夏美 - 虹のかけら.mp3"
+      amusic.src="昆夏美 - 虹のかけら.mp3";
         break;
     case "5":
-     amusic.src="平野绫、加藤英美里、福原香織、远藤綾 - もってけ！セーラーふく (拿去吧！水手服).mp3"
+     amusic.src="平野绫、加藤英美里、福原香織、远藤綾 - もってけ！セーラーふく (拿去吧！水手服).mp3";
         break;
     case "6":
-    amusic.src="放課後ティータイム - ふわふわ時間 (轻飘飘时间) (轻飘飘时间) (Single Version).mp3"
+    amusic.src="放課後ティータイム - ふわふわ時間 (轻飘飘时间) (轻飘飘时间) (Single Version).mp3";
         break;
     case "7":
-    amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3"
+    amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3";
         break;
         case "8":
-    amusic.src="阿澄佳奈、松来未祐、大坪由佳 - 太陽曰く燃えよカオス (太阳说燃烧吧混沌).mp3"
+        amusic.src="阿澄佳奈、松来未祐、大坪由佳 - 太陽曰く燃えよカオス (太阳说燃烧吧混沌).mp3";
+        if(amusic.src!=""){
+        
+        gce();
+        }
+        break;
+        default:
         break;
         }
 
 
 
 bmusic.currentTime=localStorage.time;
-	bmusic.load();
+	
     bmusic.play();
 document.documentElement.scrollTop = localStorage.go;
 localStorage.setItem("go",0);
@@ -257,8 +266,7 @@ function AA(){
 	localStorage.setItem("music",1);
 	bmusic.load();
     bmusic.play();
-    gce(3);
-    gc(1);
+    gc();
     
 }
 function AB(){
@@ -315,8 +323,7 @@ function AL(){
 	localStorage.setItem("music",8);
 	bmusic.load();
     bmusic.play();
-    gc(3);
-    gce(1);
+    gce();
 }
 window.onscroll = function() {scrollFunction()};
  

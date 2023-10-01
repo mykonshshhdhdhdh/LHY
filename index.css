@@ -14,6 +14,14 @@ scroll-behavior: smooth;
 * {
 outline: none;
 }
+::selection{
+color:white;
+background-color:#FF88B9;
+}
+-moz::selection{
+color:white;
+background-color:#FF88B9;
+}
 #black-div {
 pointer-events: none;
 background:none;

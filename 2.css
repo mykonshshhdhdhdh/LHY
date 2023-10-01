@@ -9,6 +9,14 @@ position:fixed;
     z-index: 91;
     outline: none;
 }
+::selection{
+color:white;
+background-color:#FF88B9;
+}
+-moz::selection{
+color:white;
+background-color:#FF88B9;
+}
 .yuea {
 position:fixed;
 	bottom:50px;

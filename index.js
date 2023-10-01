@@ -613,13 +613,25 @@ var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.m
  }
 
 function ssclean(){
+
 var clean=confirm("确定要清理缓存！！！！\n清理后不能恢复！！！！\n清理范围包括备忘录内容");
 if (clean ==true)
 {
+var musicc = document.getElementById("audio");
+if(musicc.paused){
+
 localStorage.clear();
+	bmusic.pause();
+	amusic.src="";
+	bmusic.load();
+    bmusic.play();
+ document.getElementById("musicp").innerHTML="";
 setTimeout(function(){
 alert("清理成功！");
 },2000);
+}else{
+alert("清理失败！\n原因：因为音乐正在播放\n请改变音乐后再试");
+}
 }
 }
 var ssn=1;

@@ -37,6 +37,7 @@ color:white;
 font-size:10vh;
 position:relative;
 buttom:10vh;
+pointer-events: none;
 }
 #time-div {
 width:90vw;
@@ -45,11 +46,13 @@ flex-direction:column;
 align-items:center;
 position:absolute;
 top: 90vh;
+pointer-events: none;
 }
 #time-small {
 color:white;
 font-size:0.5em;
 margin-top:0.5em;
+pointer-events: none;
 }
 #ts {
 width:100vw;

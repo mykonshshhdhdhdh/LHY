@@ -151,7 +151,8 @@ filter: drop-shadow(0px 1px 5vw black);
 color:white;
 background-color:#FF88B9;
 }
--moz::selection{
+::-moz-selection
+{
 color:white;
 background-color:#FF88B9;
 }

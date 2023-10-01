@@ -13,7 +13,8 @@ position:fixed;
 color:white;
 background-color:#FF88B9;
 }
--moz::selection{
+::-moz-selection
+{
 color:white;
 background-color:#FF88B9;
 }

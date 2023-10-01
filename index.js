@@ -165,6 +165,7 @@ switch(musicname)
         break;
     case "6":
     amusic.src="放課後ティータイム - ふわふわ時間 (轻飘飘时间) (轻飘飘时间) (Single Version).mp3";
+    gca();
         break;
     case "7":
     amusic.src="μ's - 愛してるばんざーい! (喜欢你万岁!).mp3";
@@ -307,7 +308,7 @@ function AF(){
 	localStorage.setItem("music",6);
 	bmusic.load();
     bmusic.play();
-          document.getElementById("musicp").innerHTML="";
+    gca();
 }
 function AG(){
 	bmusic.pause();

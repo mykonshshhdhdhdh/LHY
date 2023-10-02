@@ -327,44 +327,41 @@ function AL(){
     gce();
 }
 window.onscroll = function() {scrollFunction()};
- 
+var topno = 0;
 function scrollFunction() {console.log(121);
         
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "1";
-
+    var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
+    
                 
         
     } 
     
     else {
-      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.opacity = "0";
-      
+    if(topno==0){
+      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "none";
+      }
     }
 }
+var notop;
 function non() {
 
-   var ssn= setInterval(function(){ 
-   if(document.documentElement.scrollTop>20){nntop();
-   }else{
-   clearInterval(ssn);
-   }
-    }, 10);
- 
-    
-    
-}
-function nntop(){
 
-var nn = document.documentElement.scrollTop;
-if(nn>=2000){
-document.body.scrollTop = nn-100 ;
-    document.documentElement.scrollTop = nn-100 ;
-}else{
-    document.body.scrollTop = nn-51 ;
-    document.documentElement.scrollTop = nn-51 ;
+if(document.body.scrollTop!=0){
+notop = document.documentElement.scrollTop;
+ document.body.scrollTop = 0 ;
+ topno = 1;
+     var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.diplay = "inline";
+               document.getElementById("no").innerHTML="&#8744;";
+  }else{
+document.body.scrollTop = notop ;
+ topno = 0;
+     var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
+               document.getElementById("no").innerHTML="&#8743;";
+  }   
+    
 }
-    }
+
 let lo=null;
 function IE(){
 clearTimeout(lo);

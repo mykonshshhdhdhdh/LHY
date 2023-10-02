@@ -749,7 +749,7 @@ width:5vw;
 height:5vw;
 outline: none;
 z-index: 999;
-opacity:0;
+display:none;
 background-color:#FF88B9;
 color:white;
 border-style:none;

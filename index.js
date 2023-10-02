@@ -363,8 +363,7 @@ function scrollFunction() {console.log(121);
         
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
-    
-                
+document.getElementById("no").innerHTML="&#8743;";
         
     } 
     
@@ -372,6 +371,7 @@ function scrollFunction() {console.log(121);
     if(topno==0){
       var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "none";
       }
+      document.getElementById("no").innerHTML="&#8744;";
     }
 }
 var notop;
@@ -390,8 +390,9 @@ document.body.scrollTop = notop ;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
                document.getElementById("no").innerHTML="&#8743;";
   }   
-    
-}
+
+ }   
+
 
 let lo=null;
 function IE(){

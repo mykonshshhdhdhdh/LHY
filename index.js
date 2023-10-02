@@ -6,7 +6,38 @@ var y = document.cookie;
 
 
 
+setInterval("span()","1000");
 
+
+
+function span(){
+var aqyxd = new Date();
+var aqyxn = aqyxd.getFullYear() - 2023;
+var aqyxm = aqyxd.getMonth() - 7;
+var aqyxr = aqyxd.getUTCDate() - 17;
+var aqyxh=aqyxd.getHours()-13;
+
+var aqyxmin = aqyxd.getMinutes()-55;
+var aqyxs=aqyxd.getSeconds();
+if(aqyxmin<0){
+aqyxh=aqyxh-1;
+aqyxmin=aqyxmin+60;
+}
+if(aqyxh<0){
+aqyxr=aqyxr-1;
+aqyxh=aqyxh+24;
+}
+if(aqyxr<0){
+aqyxm=aqyxm-1;
+aqyxr=aqyxr+30;
+}
+if(aqyxm < 0){
+aqyxn=aqyxn-1;
+aqyxm=aqyxm+12;
+}
+
+document.getElementById("aqyx-span").innerHTML=aqyxn+"年"+aqyxm+"月"+aqyxr+"日"+aqyxh+"时"+aqyxmin+"分"+aqyxs+"秒";
+}
 
 var a=1;
 var b=1;

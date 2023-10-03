@@ -139,28 +139,43 @@ position:fixed;
 width:15%;
 height:40px;
 border-style:none;
-z-index: 39001;
+z-index: 39010;
 display:flex; 
 flex-direction:column;
 align-items:center;
+
+}
+#IE button {
+position:absolute;
+width:100%;
+height:100%;
+background-color:#FF88B9;
+border-style:none;
+z-index: 39000;
 }
 #c-a {
+z-index: 39010;
 width:60%;
 height:5%;
 background:white;
 margin-top:20%;
+pointer-events: none;
 }
 #c-b {
+z-index: 39010;
 width:60%;
 height:5%;
 background:white;
 margin-top:10%;
+pointer-events: none;
 }
 #c-c {
+z-index: 39010;
 width:60%;
 height:5%;
 background:white;
 margin-top:10%;
+pointer-events: none;
 }
 #IED {
 position:fixed;

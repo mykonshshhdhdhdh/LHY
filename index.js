@@ -389,7 +389,6 @@ document.body.scrollTop = notop ;
  topno = 0;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
                document.getElementById("no").innerHTML="&#8743;";
-      
   }   
 
  }   

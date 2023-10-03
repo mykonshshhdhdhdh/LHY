@@ -380,12 +380,20 @@ function non() {
 
 if(document.body.scrollTop!=0){
 notop = document.documentElement.scrollTop;
- document.body.scrollTop = 0 ;
+ 
+ window.scrollTo({
+ top:0,
+ behavior:'smooth',
+ });
  topno = 1;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.diplay = "inline";
                document.getElementById("no").innerHTML="&#8744;";
   }else{
-document.body.scrollTop = notop ;
+
+ window.scrollTo({
+ top:notop,
+ behavior:'smooth',
+ });
  topno = 0;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
                document.getElementById("no").innerHTML="&#8743;";

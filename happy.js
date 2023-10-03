@@ -1,9 +1,17 @@
+
 var d = new Date();
 var x = d.getUTCDate();
 var y = d.getMonth();
 var r = d.getFullYear() - 2023;
 // 0=1月，1=2月
 // x是日期，y是月份
+if(x==27&&y==9){
+document.getElementById("tsb").innerHTML="❀松来未祐一路走好。";
+var l=document.getElementById('ts');l.style.transitionl="0s";l.style.filter="grayscale(100%)";
+
+}else{
+var l=document.getElementById('ts');l.style.transitionl="0s";l.style.filter="grayscale(0%)";
+}
 if(x==18&&y==8){
 document.getElementById("tsb").innerHTML="✎...祝站长生日快乐！！！";
 }

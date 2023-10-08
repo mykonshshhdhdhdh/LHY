@@ -678,13 +678,16 @@ if(ssn==3){
 ssn=1;
 }
 if(ssn==2){
-var ssdiv = document.getElementById('ss-div');ssdiv.style.transition = "1s"; ssdiv.style.marginLeft = "300vw";
 
+var ssdiv = document.getElementById('ss-div');ssdiv.style.transition = "0.5s"; ssdiv.style.marginTop = "100px";
 }
+
 if(ssn==1){
-var ssdiv = document.getElementById('ss-div');ssdiv.style.transition = "1s"; ssdiv.style.marginLeft = "0vw";
+
+var ssdiv = document.getElementById('ss-div');ssdiv.style.transition = "0.5s"; ssdiv.style.marginTop = "0px";
 }
 }
+
 function ss() {
 var ssb = document.getElementById('ssb');ssb.style.display = "block";
  

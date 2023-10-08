@@ -60,7 +60,7 @@ pointer-events: none;
 }
 #ts {
 width:100vw;
-height:8vh;
+height:15vw;
 background:#ffdd71;
 position:fixed;
 	top:0px;
@@ -68,6 +68,10 @@ position:fixed;
 z-index: 50000;
 font-size:0.95em;
 Overflow:auto;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
 }
 #tsc {
 position:absolute;
@@ -1161,8 +1165,8 @@ top:70%;
 
 #ss-div {
 position:fixed;
-	top:0vh;
-	left:-300vw;
+	top:-100px;
+	left:15vw;
 width:70%;
 
 }
@@ -1174,43 +1178,13 @@ color:#FF88B9;
 border-style:solid;
 border-color:#FF88B9;
 }
-input::-webkit-input-placeholder{
-color:#FF88B9;
 
-}
-
-input[type=range] {
-    -webkit-appearance: none;
-    width: 60vw;
-    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
-}
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-}    
-input[type=range]::-webkit-slider-runnable-track {
-    height: 15px;
-    border-radius: 10px; /*将轨道设为圆角的*/
-    background: #eee;
-    box-shadow:}
-    
-input[type=range]:focus {
-    outline: none;
-    }
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 25px;
-    width: 25px;
-    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
-    background: #FF88B9; 
-    border-radius: 50%; /*外观设置为圆形*/
-    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
-    box-shadow: 0 }
 
   
 #ss-no {
 position:fixed;
 	top:0vh;
-	left:70%;
+	left:0%;
 	width:15%;
 height:40px;
 border-style:none;
@@ -1307,3 +1281,34 @@ top: 20vh;
 Overflow:auto;
 
 }
+input::-webkit-input-placeholder{
+color:#FF88B9;
+
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 60vw;
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}    
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    background: #eee;
+    box-shadow:}
+    
+input[type=range]:focus {
+    outline: none;
+    }
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #FF88B9; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 }

@@ -380,20 +380,17 @@ function non() {
 
 if(document.body.scrollTop!=0){
 notop = document.documentElement.scrollTop;
+ document.documentElement.scrollTop=0;
  
- window.scrollTo({
- top:0,
- behavior:'smooth',
- });
+ 
  topno = 1;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.diplay = "inline";
                document.getElementById("no").innerHTML="&#8744;";
   }else{
 
- window.scrollTo({
- top:notop,
- behavior:'smooth',
- });
+
+  document.documentElement.scrollTop=notop; 
+  
  topno = 0;
      var no = document.getElementById('no');no.style.transition = "0.5s"; no.style.display = "inline";
                document.getElementById("no").innerHTML="&#8743;";
@@ -417,21 +414,25 @@ lo=setTimeout(function(){
 var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "35%";
 var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "-5%";
  setTimeout(function(){
-var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(-45deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(-45deg)";
+var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.display= "none";
 var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(45deg)";
 },500)
 
  }
  if(I==1){
 var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(0deg)";
 var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
+
 var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
+
  setTimeout(function(){
-var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "10%";
+ var cb= document.getElementById('c-b');cb.style.transition = "0.1s"; cb.style.display= "inline";
+ setTimeout(function(){
+ var cb = document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "10%";
 var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "20%";
 var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "10%";
+},100)
 },500)
  }
  },500)
@@ -636,16 +637,22 @@ document.body.style.overflow = 'auto';
  if(I==3){
  I=1;
  }
- var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
- var IED = document.getElementById('IED');IED.style.transition = "1s"; IED.style.marginLeft = "0%";
-var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.transform = "rotate(0deg)";
-var cc= document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.transform = "rotate(0deg)";
-var ca= document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.transform = "rotate(0deg)";
  setTimeout(function(){
-var cb= document.getElementById('c-b');cb.style.transition = "0.5s"; cb.style.marginTop= "10%";
-var ca = document.getElementById('c-a');ca.style.transition = "0.5s"; ca.style.marginTop= "20%";
-var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.marginTop= "10%";
-},500)
+var IED = document.getElementById('IED');IED.style.transition = "0.2s"; IED.style.marginLeft = "0%";
+var cc= document.getElementById('c-c');cc.style.transition = "0.2s"; cc.style.transform = "rotate(0deg)";
+
+var ca= document.getElementById('c-a');ca.style.transition = "0.2s"; ca.style.transform = "rotate(0deg)";
+
+ setTimeout(function(){
+ var cb= document.getElementById('c-b');cb.style.transition = "0.2s"; cb.style.display= "inline";
+ setTimeout(function(){
+ var cb = document.getElementById('c-b');cb.style.transition = "0.2s"; cb.style.marginTop= "10%";
+var ca = document.getElementById('c-a');ca.style.transition = "0.2s"; ca.style.marginTop= "20%";
+var cc = document.getElementById('c-c');cc.style.transition = "0.2s"; cc.style.marginTop= "10%";
+},100)
+},200)
+ 
+ },200)
  document.body.style.overflow = 'hidden';
  }
 

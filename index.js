@@ -584,7 +584,7 @@ document.body.style.overflow = 'auto';
  var yuea = document.getElementById('yue');yuea.style.transition = "0.2s"; yuea.style.display = "none";
  }
  if(s==1){
- var szabutton = document.getElementById('szabutton');szabutton.style.transition = "0.2s"; szabutton.style.background = "#FF88B9";
+ var szabutton = document.getElementById('szabutton');szabutton.style.transition = "0.2s"; szabutton.style.background = "#FF6699";
  var yuea = document.getElementById('yue');yuea.style.transition = "0.2s"; yuea.style.display = "inline";
  }
  }
@@ -608,7 +608,7 @@ localStorage.setItem("black",szblack);
  var music = document.getElementById('music');music.style.transition = "0.2s"; music.style.display = "none";
  }
  if(sb==1){
- var szbbutton = document.getElementById('szbbutton');szbbutton.style.transition = "0.2s"; szbbutton.style.background = "#FF88B9";
+ var szbbutton = document.getElementById('szbbutton');szbbutton.style.transition = "0.2s"; szbbutton.style.background = "#FF6699";
  var music = document.getElementById('music');music.style.transition = "0.2s"; music.style.display = "inline";
  }
  }
@@ -622,7 +622,7 @@ localStorage.setItem("black",szblack);
   time1=2;
  }
  if(sc==1){
- var szcbutton = document.getElementById('szcbutton');szcbutton.style.transition = "0.2s"; szcbutton.style.background = "#FF88B9";
+ var szcbutton = document.getElementById('szcbutton');szcbutton.style.transition = "0.2s"; szcbutton.style.background = "#FF6699";
   time1=1;
  }
  }

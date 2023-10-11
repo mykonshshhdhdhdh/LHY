@@ -150,7 +150,7 @@ return;
  a=2;
  }
  if(sd==1){
- var szdbutton = document.getElementById('szdbutton');szdbutton.style.transition = "0.2s"; szdbutton.style.background = "#FF88B9";
+ var szdbutton = document.getElementById('szdbutton');szdbutton.style.transition = "0.2s"; szdbutton.style.background = "#FF6699";
   a=1;
  }
  }

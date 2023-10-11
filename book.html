@@ -17,11 +17,11 @@ outline:none;
 }
 ::selection{
 color:white;
-background-color:#FF88B9;
+background-color:#FF6699;
 }
 ::-moz-selection{
 color:white;
-background-color:#FF88B9;
+background-color:#FF6699;
 }
 #sun {
 pointer-events: none;
@@ -35,7 +35,7 @@ z-index: 999999992;
 opacity:0.5;
 }
 button {
-background:#FF88B9;
+background:#FF6699;
 color:white;
 border-style:solid;
 border-color:#eee;
@@ -240,7 +240,7 @@ if(p==""){
 return;
 }
 //判断输入为零时，跳出脚本
-var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#FF88B9";
+var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#FF6699";
 document.getElementById('head').value="";
 
 //如果输入为零，则跳出脚本
@@ -303,7 +303,7 @@ b.previousSibling.setAttribute("contenteditable","true");
 }else{
 b.innerHTML="修改";
 b.previousSibling.setAttribute("contenteditable","false");
-b.style.background="#FF88B9";
+b.style.background="#FF6699";
 localStorage.setItem("body",document.getElementById("body").innerHTML);
 
 }
@@ -311,7 +311,7 @@ localStorage.setItem("body",document.getElementById("body").innerHTML);
 function headcolor(){
 if(document.getElementById('head').value==""){
 
-var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#FF88B9";
+var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#FF6699";
 }else{
 var heada = document.getElementById('heada');heada.style.transition = "0s"; heada.style.background = "#ff3e8d";
 

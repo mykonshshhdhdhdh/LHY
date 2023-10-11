@@ -2,12 +2,14 @@ body {
 display:flex; 
 flex-direction:column;
 align-items:center;
-background:white;
+background:#FFFFFF;
 background-image:url('bj.jpg');
 
 background-attachment:fixed;
 background-position: center top;
-background-size: cover;
+background-size: center;
+
+background-repeat:no-repeat;
 
 
 
@@ -17,7 +19,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-background-color:#FF88B9;
+background-color:#FF6699;
 color:white;
 position:fixed;
 	top:0px;
@@ -31,11 +33,11 @@ outline: none;
 }
 ::selection {
 color:white;
-background-color:#FF88B9;
+background-color:#FF6699;
 }
 ::-moz-selection {
 color:white;
-background-color:#FF88B9;
+background-color:#FF6699;
 }
 #black-div {
 pointer-events: none;
@@ -150,7 +152,7 @@ border-right-color:white;
     100% {width:18px;}
     }
 #IE {
-background-color:#FF88B9;
+background-color:#FF6699;
 position:fixed;
 	top:0vh;
 	left:85%;
@@ -167,7 +169,7 @@ align-items:center;
 position:absolute;
 width:100%;
 height:100%;
-background-color:#FF88B9;
+background-color:#FF6699;
 border-style:none;
 z-index: 39000;
 }
@@ -211,7 +213,7 @@ filter: drop-shadow(0px 2px 10px  #aab5bc);
 .IEDA {
 width:100%;
 height:12%;
-background-color:#FF88B9;
+background-color:#FF6699;
 position:absolute;
 	top:0%;
 	left:0%;
@@ -242,9 +244,10 @@ z-index: 39001;
 #IEPA {
 position:absolute;
 	top:1%;
-	left:45%;
+	left:40%;
 color:white;
 z-index: 39001;
+font-size:6vw;
 }
 #wl_a {
 display:flex; 
@@ -258,7 +261,7 @@ position:relative;
 }
 #busuanzi_container_site_uv {
 
-	color:#FF88B9;
+	color:#FF6699;
 
 }
 #busuanzi_container_site_uv_a {
@@ -269,7 +272,7 @@ flex: 1;
 height:100%;
 border-right-style:solid;
 border-right-width:2px;
-border-right-color:#ffa2c8;
+border-right-color:#ff9cbd;
 }
 #book_a {
 text-align:center;
@@ -278,7 +281,7 @@ border-right-style:solid;
 height:100%;
 Overflow:hidden;
 border-width:2px;
-border-color:#ffa2c8;
+border-color:#ff9cbd;
 }
 #book_a p {
 margin-top:-1%;
@@ -306,13 +309,13 @@ list-style-type: none;
     margin: 0;
     padding: 0;
 border-top-style:solid; 
- border-top-color:#FF88B9;
+ border-top-color:#FF6699;
 }
 #IEa button {
 margin-top:3%;
 width:100%;
 text-decoration:none;
-color:#FF88B9;
+color:#FF6699;
 font-size:6vw;
 text-align-last: left;
 border-style:none;
@@ -326,7 +329,7 @@ margin-left:2.5%;
 margin-top:-0.2%;
 width:100%;
 text-decoration:none;
-color:#FF88B9;
+color:#FF6699;
 font-size:5vw;
 text-align-last: left;
 font-size:6vw;
@@ -335,7 +338,7 @@ font-size:6vw;
 	animation:IEa 0.5s infinite;
 	animation-iteration-count:1;
 	font-size:6.2vw;
-	color:#ffafd0;
+	color:#ff9cbd;
 }
 @keyframes IEa
     {
@@ -361,11 +364,11 @@ width:100vw;
 height:10vh;
 position:relative;
 	top:0vw;
-background-color:#FF88B9;
+background-color:#FF6699;
 z-index: 40000;
 }
 #sz p {
-color:#FF88B9;
+color:#FF6699;
 
 }
 #szno {
@@ -374,22 +377,22 @@ height:30px;
 border-style:solid;
 border-color:#eee;
 color:white;
-background-color:#FF88B9;
+background-color:#FF6699;
 border-radius:8px;
 outline: none;
 }
 #sza {
 
 border-style:none;
-color:#FF88B9;
+color:#FF6699;
 }
 #szabutton {
 width:25px;
 height:25px;
 border-style:solid;
 border-color:#eee;
-color:#FF88B9;
-background-color:#FF88B9;
+color:#FF6699;
+background-color:#FF6699;
 border-radius:300px;
 margin-left:50px;
 outline: none;
@@ -397,15 +400,15 @@ outline: none;
 #szb {
 
 border-style:none;
-color:#FF88B9;
+color:#FF6699;
 }
 #szbbutton {
 width:25px;
 height:25px;
 border-style:solid;
 border-color:#eee;
-color:#FF88B9;
-background-color:#FF88B9;
+color:#FF6699;
+background-color:#FF6699;
 border-radius:300px;
 margin-left:50px;
 outline: none;
@@ -413,15 +416,15 @@ outline: none;
 #szc {
 
 border-style:none;
-color:#FF88B9;
+color:#FF6699;
 }
 #szcbutton {
 width:25px;
 height:25px;
 border-style:solid;
 border-color:#eee;
-color:#FF88B9;
-background-color:#FF88B9;
+color:#FF6699;
+background-color:#FF6699;
 border-radius:300px;
 margin-left:50px;
 outline: none;
@@ -429,15 +432,15 @@ outline: none;
 #szd {
 
 border-style:none;
-color:#FF88B9;
+color:#FF6699;
 }
 #szdbutton {
 width:25px;
 height:25px;
 border-style:solid;
 border-color:#eee;
-color:#FF88B9;
-background-color:#FF88B9;
+color:#FF6699;
+background-color:#FF6699;
 border-radius:300px;
 margin-left:50px;
 outline: none;
@@ -477,6 +480,7 @@ top: 140%;
 left: 5vw;
 border-radius:5vw;
 background:white;
+filter: drop-shadow(0px 2px 5px #eee);
 }
 .diva {
 width:18vw;
@@ -486,6 +490,7 @@ top: 140%;
 left: 30vw;
 border-radius:5vw;
 background:white;
+filter: drop-shadow(0px 2px 5px #eee);
 }
 .divz {
 width:18vw;
@@ -495,6 +500,7 @@ top: 140%;
 left: 55vw;
 border-radius:5vw;
 background:white;
+filter: drop-shadow(0px 2px 5px #eee);
 }
 .divqq {
 width:18vw;
@@ -505,6 +511,7 @@ left: 80vw;
 border-radius:5vw;
 background:white;
 overflow:hidden;
+filter: drop-shadow(0px 2px 5px #eee);
 }
 
 .butq {
@@ -741,9 +748,9 @@ content: '是偶像团“μs”的歌曲，这首歌是真姬作曲作词。';
 width: 0;
   height: 0;
   border-right: 30px solid transparent;
-  border-left: 180px solid #FF88B9;
-  border-bottom: 30px solid #FF88B9;
-  border-top: 30px solid #FF88B9;
+  border-left: 180px solid #FF6699;
+  border-bottom: 30px solid #FF6699;
+  border-top: 30px solid #FF6699;
   
 filter: drop-shadow(0px 2px 10px #aab5bc);
 }
@@ -823,7 +830,7 @@ height:10vw;
 outline: none;
 z-index: 999;
 display:none;
-background-color:#FF88B9;
+background-color:#FF6699;
 color:white;
 border-style:none;
 }
@@ -957,9 +964,9 @@ display:none;
 width: 0;
   height: 0;
   border-right: 30px solid transparent;
-  border-left: 180px solid #FF88B9;
-  border-bottom: 30px solid #FF88B9;
-  border-top: 30px solid #FF88B9;
+  border-left: 180px solid #FF6699;
+  border-bottom: 30px solid #FF6699;
+  border-top: 30px solid #FF6699;
   
 filter: drop-shadow(0px 2px 10px #aab5bc);
 }
@@ -1188,9 +1195,9 @@ z-index: 999;
   width: 100%;
   height:34px;
 background:white;
-color:#FF88B9;
+color:#FF6699;
 border-style:solid;
-border-color:#FF88B9;
+border-color:#FF6699;
 
 }
 
@@ -1203,7 +1210,7 @@ position:fixed;
 	width:15%;
 height:45px;
 border-style:none;
-background:#FF88B9;
+background:#FF6699;
 } 
 
 
@@ -1212,7 +1219,7 @@ width:3vw;
 height:3vw;
 border-style:solid;
 border-color:white;
-background:#FF88B9;
+background:#FF6699;
 border-radius:640px;
 }
 #ss-no-b {
@@ -1244,14 +1251,14 @@ display:none;
 
 display:none;
 width:70vw;
-color:#FF88B9;
+color:#FF6699;
   /* 每一行设置底部边框*/
-  border-bottom: 1px solid #FF88B9;
+  border-bottom: 1px solid #FF6699;
 }
 #ssb a {
 
 text-decoration:none;
-color:#FF88B9;
+color:#FF6699;
   /* 每一行设置底部边框*/
   
 }
@@ -1271,7 +1278,7 @@ font-size:0.8em;
 line-height:1.8em;
 }
 #foot {
-color:#FF88B9;
+color:#FF6699;
 font-size:1em;
 }
 #ki {
@@ -1297,7 +1304,7 @@ Overflow:auto;
 
 }
 input::-webkit-input-placeholder{
-color:#FF88B9;
+color:#FF6699;
 
 }
 
@@ -1323,7 +1330,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 25px;
     width: 25px;
     margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
-    background: #FF88B9; 
+    background: #FF6699; 
     border-radius: 50%; /*外观设置为圆形*/
     border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
     box-shadow: 0 }

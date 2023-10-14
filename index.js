@@ -556,6 +556,14 @@ document.body.style.overflow = 'auto';
  window.location.assign("my.html")
 
  }
+  function lilive(){
+  // 打开自我介绍
+  bmusic=document.querySelector('.bmusic');
+  bmusic.pause();
+ localStorage.setItem("time",bmusic.currentTime);
+ window.location.assign("live.html")
+
+ }
    function libook(){
    // 打开备忘录
    bmusic=document.querySelector('.bmusic');

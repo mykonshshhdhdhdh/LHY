@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Kondaisuki的小屋-生活圈</title>
+<style>
+
+body {
+display:flex; 
+flex-direction:column;
+
+background:black;
+}
+#hediv:before {
+content:"Kondaisuki"; 
+color:white;
+position:relative;
+left:-25vw;
+top:10%;
+}
+#body p {
+color:#D1D1D1;
+
+}
+#body {
+margin-top:2vw;
+}
+
+#body img {
+margin-top:18vw;
+width:10vw;
+border-radius:1vw;
+}
+#body div {
+margin-left:15vw;
+margin-top:-10vw;
+width:75vw;
+border-bottom-style:solid; 
+ border-bottom-color:#2c2c2c;
+}
+#body div p:hover {
+background:#696969;
+}
+#body div p {
+margin-top:3vw;
+max-height:30vh;
+Overflow:auto;
+}
+#body div img {
+width:100%;
+margin-top:0vw;
+border-radius:0vw;
+}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:2vh;left:2vw;z-index: 3;" onclick="no()"><div style="background-color:white;width:5vw;height:0.5vw;transform:rotate(-45deg);"></div>
+<div style="background-color:white;width:5vw;height:0.5vw;transform:rotate(45deg);margin-top:3vw;"></div>
+<script>
+function no(){
+if(history.length==1){
+localStorage.setItem("go",localStorage.top);
+window.location.assign("index.html")
+}else{
+localStorage.setItem("go",localStorage.top);
+window.history.go(-1)
+}
+}
+</script>
+</div>
+<div style="background-color:#939393;width:100vw;height:30vh;z-index: 1;margin-top:-8px;margin-left:-8px;">
+<!-- 这个盒子用来装封面图片 -->
+<img src="bj2.jpg" alt="图片.png" style="width:100vw;height:inherit;object-fit:cover;z-index: 1;">
+<!-- 这是封面图片 -->
+</div>
+<div style="background-color:#939393;width:20vw;height:20vw;border-radius:4vw;z-index: 2;margin-top:-10vw;margin-left:70vw;" id="hediv">
+<!-- 这个盒子用来封装头像 -->
+<img src="头像.png" alt="头像.png" style="width:20vw;height:inherit;object-fit:cover;border-radius:4vw;z-index: 2;margin-top:-6.5vw;">
+</div>
+<div id="body">
+
+<img src="头像.png" alt="头像.png">
+<div>
+<spen style="color:#7D90A9">Kondaisuki</spen>
+<p>茴香学姐生日快乐！</p>
+<img src="茴香学姐.jpg" alt="图片.jpg">
+  <br>
+  <spen style="color:#7b7b7b">2023.10.14</spen>
+</div>
+
+<img src="头像.png" alt="头像.png">
+<div>
+<spen style="color:#7D90A9">Kondaisuki</spen>
+<p>太好了，就在今天，kondaisuki的小屋正式开通生活圈，这里将发布一些关于生活类的内容，有时候是一句话或一篇小短文</p>
+  <br>
+  <spen style="color:#7b7b7b">2023.10.14</spen>
+</div>
+
+
+
+</div>
+</body>
+</html>

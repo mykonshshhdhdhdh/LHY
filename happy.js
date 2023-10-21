@@ -3,8 +3,10 @@ var d = new Date();
 var x = d.getUTCDate();
 var y = d.getMonth();
 var r = d.getFullYear() - 2023;
+var h = d.getHours();
 // 0=1月，1=2月
 // x是日期，y是月份
+
 if(x==27&&y==9){
 document.getElementById("tsb").innerHTML="❀松来未祐一路走好。";
 var l=document.getElementById('ts');l.style.transitionl="0s";l.style.filter="grayscale(100%)";
@@ -48,3 +50,9 @@ document.getElementById("tsb").innerHTML="✎...祝平泽优生日快乐！！�
 if(x==19&&y==3){
 document.getElementById("tsb").innerHTML="✎...祝真姬生日快乐！！！";
 } 
+if(h >10||h<3){
+document.getElementById("tsb").innerHTML=`<spen style="font-size:1.3em;">Z</spen>Zz...夜深了，早点入睡吧！！！`;
+var l=document.getElementById('ts');l.style.transitionl="0s";l.style.background="#ffdd71";
+}else{
+var l=document.getElementById('ts');l.style.transitionl="0s";l.style.background="#ffdd71";
+}

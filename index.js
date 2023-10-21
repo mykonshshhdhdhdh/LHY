@@ -4,7 +4,26 @@ var input, filter, table, tr, td, ssi, txtValue;
 var y = document.cookie; 
 // 创建变量“y”并赋值cookie
 
-
+function tc(tcw){
+document.getElementById("tsb").innerHTML=tcw;
+var tsb = document.getElementById('tsb');tsb.style.display= "inline";
+var ts = document.getElementById('ts');ts.style.display= "inline";
+ var ts = document.getElementById('ts');ts.style.transition = "1s"; ts.style.height= "15vw";
+ setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
+var tsb = document.getElementById('tsb');tsb.style.display= "none";
+setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.display= "none";
+},200);
+}, 3000);
+function ts(){
+var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
+var tsb = document.getElementById('tsb');tsb.style.display= "none";
+setTimeout(function(){
+var ts = document.getElementById('ts');ts.style.display= "none";
+},200);
+}
+}
 
 setInterval("span()","1000");
 
@@ -87,6 +106,7 @@ var timeh ="0"+ timeh;
 }
 document.getElementById("time").innerHTML=timeh+":"+ time ;
 document.getElementById("tim").innerHTML= now ;
+
 }
 
 function yue(){
@@ -438,24 +458,7 @@ var cc = document.getElementById('c-c');cc.style.transition = "0.5s"; cc.style.m
  }
  function lp(){
  clearTimeout(lo);
-document.getElementById("tsb").innerHTML="✎...请不要连续点击！！！！";
-var tsb = document.getElementById('tsb');tsb.style.display= "inline";
-var ts = document.getElementById('ts');ts.style.display= "inline";
- var ts = document.getElementById('ts');ts.style.transition = "1s"; ts.style.height= "8vh";
- setTimeout(function(){
-var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
-var tsb = document.getElementById('tsb');tsb.style.display= "none";
-setTimeout(function(){
-var ts = document.getElementById('ts');ts.style.display= "none";
-},200);
-}, 3000);
-function ts(){
-var ts = document.getElementById('ts');ts.style.transition = "0.2s"; ts.style.height= "0px";
-var tsb = document.getElementById('tsb');tsb.style.display= "none";
-setTimeout(function(){
-var ts = document.getElementById('ts');ts.style.display= "none";
-},200);
-}
+tc("✎...请不要连续点击！！！！");
  }
     function IETX(){
    Ic=Ic+1;
